@@ -1,0 +1,17 @@
+// Variables
+$color1: #ff5b1a;
+$color2: #60007f;
+// Color Palette using Map value
+$webColors: (
+  "orange": $color1,
+  "purple": $color2,
+);
+// For calling colors to use in CSS use map-get() line. Example code can be seen below
+// map-get($map: $web_Colors, $key: '$color1');
+
+// Device Sizes
+$site-width: 1280px;
+$site-height: 800px;
+$web-width: 1440px;
+$iPad-width: 780px;
+$phone-width: 430px;
