@@ -170,15 +170,99 @@ nav .donateBTN:active {
 }
 
 footer {
-  height: 50px;
-  background-color: #000;
+  min-height: 300px;
+  background-color: #60007f;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  flex-direction: column;
+  padding-top: 70px;
+  color: #fff;
 }
 footer a {
   color: #fff;
   text-decoration: none;
+}
+footer .topSection {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+footer .topSection .logoGroup {
+  background-color: #ffffff;
+  max-width: 400px;
+  border-radius: 32px;
+  padding: 58px 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  gap: 45px;
+}
+footer .topSection .logoPic {
+  max-width: 310px;
+}
+footer .topSection .logoPic img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+footer .topSection .linkSection {
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+  max-width: 285px;
+}
+footer .topSection .linkSection h1 {
+  text-transform: uppercase;
+  font-family: Inter_Bold;
+  font-size: 36px;
+  margin-bottom: 0;
+}
+footer .topSection .linkSection .linkGroup {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-direction: column;
+  gap: 50px;
+}
+footer .topSection .linkSection .linkGroup a {
+  font-size: 20px;
+}
+footer .topSection .socialBox {
+  background-color: #fff;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+footer .topSection .socialBox .socialIcon {
+  height: 52px;
+  width: 52px;
+  filter: brightness(0) saturate(100%) invert(18%) sepia(23%) saturate(5703%) hue-rotate(267deg) brightness(98%) contrast(137%);
+}
+footer .topSection .socialBox img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+footer .bottomSection {
+  background-color: #ededed;
+  color: #000;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 60px;
+}
+footer .bottomSection p {
+  margin-bottom: 0;
+  font-size: 20px;
+  font-family: Inter_Light;
 }
 
 /*# sourceMappingURL=styles.css.map */
