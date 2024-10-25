@@ -45,6 +45,12 @@ nav {
     justify-content: space-evenly;
     cursor: pointer;
     position: relative;
+    &:hover {
+      .dropDownMenu {
+        display: flex;
+        opacity: 100%;
+      }
+    }
   }
   .navArrow {
     height: 45px;
@@ -62,7 +68,7 @@ nav {
     // padding: clamp(0.625rem, 0.4891vw, 0.9063rem) clamp(1.375rem, 1.5217vw, 2.25rem);
     // padding: clamp(10px, 0.4891vw, 14.5px) clamp(22px, 1.5217vw, 14.5px);
     border-radius: 100px;
-    transition-duration: 0.2s;
+    transition-duration: 0.6s;
     a {
       // font-size: 30px; // Fixed Value
       font-size: clamp(0.9375rem, 1.6304vw, 1.875rem);
@@ -81,12 +87,18 @@ nav {
 }
 .dropDownMenu {
   width: 437px;
-  display: flex;
+  // display: flex;
+  display: none;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   flex-direction: column;
   position: absolute;
-  top: 92px;
+  // top: 92px;
+  top: 40px;
+  min-height: 300px; /* Keep an eye on the height of the Drop Down Menu/Object. If the object's height is too small or too far from the parent/hovered element, then the dropdown Menu will disappear. */
+  // Jutify content to the top and Add padding at the top so items can be align correctly.
+  // padding-top: 30px;
+  padding-top: 52px;
   a {
     width: 100%;
     color: #ffffff;

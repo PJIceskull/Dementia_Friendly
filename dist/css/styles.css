@@ -102,6 +102,10 @@ nav .dropDown {
   cursor: pointer;
   position: relative;
 }
+nav .dropDown:hover .dropDownMenu {
+  display: flex;
+  opacity: 100%;
+}
 nav .navArrow {
   height: 45px;
   width: 45px;
@@ -115,7 +119,7 @@ nav .donateBTN {
   background-color: #ff5b1a;
   padding: 10px 22px;
   border-radius: 100px;
-  transition-duration: 0.2s;
+  transition-duration: 0.6s;
 }
 nav .donateBTN a {
   font-size: clamp(0.9375rem, 1.6304vw, 1.875rem);
@@ -133,12 +137,14 @@ nav .donateBTN:active {
 
 .dropDownMenu {
   width: 437px;
-  display: flex;
+  display: none;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   flex-direction: column;
   position: absolute;
-  top: 92px;
+  top: 40px;
+  min-height: 300px; /* Keep an eye on the height of the Drop Down Menu/Object. If the object's height is too small or too far from the parent/hovered element, then the dropdown Menu will disappear. */
+  padding-top: 52px;
 }
 .dropDownMenu a {
   width: 100%;
