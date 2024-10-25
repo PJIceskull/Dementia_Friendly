@@ -3,6 +3,6 @@
 ## Links to Preview Site
 
 - [Web4 link]()
-- [Github Pages](https://pjiceskull.github.io/Dementia_Friendly/)
+- [Github Pages](https://pjiceskull.github.io/Dementia_Friendly/dist)
 
 ## About Project
