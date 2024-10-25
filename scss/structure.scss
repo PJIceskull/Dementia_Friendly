@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Inter_Regular;
 }
 html,
 body {
@@ -15,4 +16,16 @@ h5,
 h6,
 p {
   margin-bottom: 16px;
+}
+
+a {
+  transition-duration: 0.25s;
+}
+
+#app {
+  max-width: $site-width;
+  // min-height: $site-height;
+  min-height: 500px;
+  background-color: cornflowerblue;
+  margin: 0 auto;
 }

@@ -1,13 +1,33 @@
 // Variables
 $color1: #ff5b1a;
 $color2: #60007f;
+$color3: #ff9589;
+$color4: #af3031;
+$color5: #a7589b;
+$color6: #4e0047;
+$color7: #595959;
+$color8: #757575;
+
 // Color Palette using Map value
 $webColors: (
   "orange": $color1,
+  "lightOrange": $color3,
+  "darkOrange": $color4,
   "purple": $color2,
+  "lightPurple": $color5,
+  "darkPurple": $color6,
+  "dimgray": $color7,
+  "lightDimGray": $color8,
 );
 // For calling colors to use in CSS use map-get() line. Example code can be seen below
 // map-get($map: $web_Colors, $key: '$color1');
+
+// Filter()s
+// CSS filter lines to change the color of certain icons
+$orangeFilter: brightness(0) saturate(100%) invert(45%) sepia(86%)
+  saturate(2800%) hue-rotate(348deg) brightness(100%) contrast(103%);
+$purpleFilter: brightness(0) saturate(100%) invert(18%) sepia(23%)
+  saturate(5703%) hue-rotate(267deg) brightness(98%) contrast(137%);
 
 // Device Sizes
 $site-width: 1280px;
@@ -15,3 +35,7 @@ $site-height: 800px;
 $web-width: 1440px;
 $iPad-width: 780px;
 $phone-width: 430px;
+
+// Fonts
+
+// Font-Weight

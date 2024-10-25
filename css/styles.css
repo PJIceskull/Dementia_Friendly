@@ -1,7 +1,36 @@
+@font-face {
+  font-family: Inter_Light;
+  src: url(../css/fonts/Inter_18pt-Light.ttf);
+}
+@font-face {
+  font-family: Inter_Regular;
+  src: url(../css/fonts/Inter_18pt-Regular.ttf);
+}
+@font-face {
+  font-family: Inter_Medium;
+  src: url(../css/fonts/Inter_18pt-Medium.ttf);
+}
+@font-face {
+  font-family: Inter_SemiBold;
+  src: url(../css/fonts/Inter_18pt-Bold.ttf);
+}
+@font-face {
+  font-family: Inter_Bold;
+  src: url(../css/fonts/Inter_18pt-Bold.ttf);
+}
+@font-face {
+  font-family: Inter_ExtraBold;
+  src: url(../css/fonts/Inter_18pt-ExtraBold.ttf);
+}
+@font-face {
+  font-family: Inter_Black;
+  src: url(../css/fonts/Inter_18pt-Black.ttf);
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Inter_Regular;
 }
 
 html,
@@ -19,16 +48,83 @@ p {
   margin-bottom: 16px;
 }
 
+a {
+  transition-duration: 0.25s;
+}
+
+#app {
+  max-width: 1280px;
+  min-height: 500px;
+  background-color: cornflowerblue;
+  margin: 0 auto;
+}
+
 nav {
-  height: 50px;
-  background-color: #000;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+nav a {
+  color: #000;
+  text-decoration: none;
+}
+nav .dfIndy_Logo {
+  max-width: 304px;
+  max-height: 136px;
+}
+nav .dfIndy_Logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+nav .navLinks {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  gap: 60px;
 }
-nav a {
-  color: #fff;
-  text-decoration: none;
+nav .navLinks a {
+  font-size: clamp(1.125rem, 1.9565vw, 2.25rem);
+  font-family: Inter_SemiBold;
+}
+nav .navLinks a:hover {
+  color: #ff5b1a;
+}
+nav .dropDown {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+nav .navArrow {
+  height: 45px;
+  width: 45px;
+  filter: brightness(0) saturate(100%) invert(45%) sepia(86%) saturate(2800%) hue-rotate(348deg) brightness(100%) contrast(103%);
+}
+nav .navArrow img {
+  height: 100%;
+  width: 100%;
+}
+nav .donateBTN {
+  background-color: #ff5b1a;
+  padding: 10px 22px;
+  border-radius: 100px;
+  transition-duration: 0.2s;
+}
+nav .donateBTN a {
+  font-size: clamp(0.9375rem, 1.6304vw, 1.875rem);
+  color: #ffffff;
+}
+nav .donateBTN:hover {
+  background-color: #ff9589;
+}
+nav .donateBTN:hover a {
+  color: #ffffff;
+}
+nav .donateBTN:active {
+  background-color: #af3031;
 }
 
 footer {
