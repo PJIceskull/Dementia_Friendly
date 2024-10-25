@@ -25,7 +25,8 @@ a {
 #app {
   max-width: $site-width;
   // min-height: $site-height;
-  min-height: 500px;
+  // min-height: 500px;
+  min-height: 100%;
   background-color: cornflowerblue;
   margin: 0 auto;
 }

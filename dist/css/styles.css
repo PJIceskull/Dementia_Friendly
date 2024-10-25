@@ -54,7 +54,7 @@ a {
 
 #app {
   max-width: 1280px;
-  min-height: 500px;
+  min-height: 100%;
   background-color: cornflowerblue;
   margin: 0 auto;
 }
@@ -176,7 +176,6 @@ footer {
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
-  padding-top: 70px;
   color: #fff;
 }
 footer a {
@@ -187,7 +186,10 @@ footer .topSection {
   width: 100%;
   display: flex;
   align-items: flex-start;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  padding: 75px 25px;
+  flex-wrap: wrap;
+  gap: 30px 25px;
 }
 footer .topSection .logoGroup {
   background-color: #ffffff;
@@ -230,6 +232,31 @@ footer .topSection .linkSection .linkGroup {
 footer .topSection .linkSection .linkGroup a {
   font-size: 20px;
 }
+footer .topSection .linkSection .linkGroup a:hover {
+  background-color: #a7589b;
+  padding: 10px 12px;
+  border-radius: 5px;
+}
+footer .topSection .linkSection .linkGroup a:active {
+  background-color: #4e0047;
+}
+footer .topSection .contactSection {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 300px;
+  max-width: 400px;
+}
+footer .topSection .socialGroup p {
+  margin-bottom: 22px;
+}
+footer .topSection .socialMediaGroup {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+}
 footer .topSection .socialBox {
   background-color: #fff;
   width: 70px;
@@ -263,6 +290,15 @@ footer .bottomSection p {
   margin-bottom: 0;
   font-size: 20px;
   font-family: Inter_Light;
+}
+
+@media screen and (max-width: 1024px) {
+  footer .topSection {
+    justify-content: space-between;
+  }
+  footer .topSection .contactSection {
+    max-width: 300px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

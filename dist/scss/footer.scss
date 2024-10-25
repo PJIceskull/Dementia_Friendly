@@ -5,7 +5,6 @@ footer {
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
-  padding-top: 70px;
   color: #fff;
   a {
     color: #fff;
@@ -15,8 +14,10 @@ footer {
     width: 100%;
     display: flex;
     align-items: flex-start;
-    justify-content: space-evenly;
-
+    justify-content: space-between;
+    padding: 75px 25px;
+    flex-wrap: wrap;
+    gap: 30px 25px;
     .logoGroup {
       background-color: #ffffff;
       max-width: 400px;
@@ -55,13 +56,24 @@ footer {
         gap: 50px;
         a {
           font-size: 20px;
+          &:hover {
+            background-color: map-get($map: $webColors, $key: "lightPurple");
+            padding: 10px 12px;
+            border-radius: 5px;
+          }
+          &:active {
+            background-color: map-get($map: $webColors, $key: "darkPurple");
+          }
         }
       }
     }
     .contactSection {
       display: flex;
       align-items: flex-start;
+      justify-content: space-between;
       flex-direction: column;
+      min-height: 300px;
+      max-width: 400px;
     }
     .socialGroup {
       p {
@@ -71,7 +83,8 @@ footer {
     .socialMediaGroup {
       display: flex;
       align-items: center;
-      justify-content: space-evenly;
+      justify-content: flex-start;
+      gap: 12px;
     }
     .socialBox {
       background-color: #fff;
@@ -106,6 +119,16 @@ footer {
       margin-bottom: 0;
       font-size: 20px;
       font-family: Inter_Light;
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  footer {
+    .topSection {
+      justify-content: space-between;
+      .contactSection {
+        max-width: 300px;
+      }
     }
   }
 }
