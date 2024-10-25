@@ -21,7 +21,9 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    gap: 60px;
+    // gap: 60px;
+    gap: clamp(1.875rem, 3.26vw, 3.75rem);
+    // gap: clamp(30px, 3.26vw, 60px);
     a {
       // font-size: 36px; // Fixed Value
       font-size: clamp(1.125rem, 1.9565vw, 2.25rem);
@@ -30,12 +32,19 @@ nav {
         color: map-get($map: $webColors, $key: "orange");
       }
     }
+    .dropDownMenu {
+      a {
+        font-size: 20px;
+        // font-size: clamp(0.875rem, 0.6522vw, 1.25rem);
+      }
+    }
   }
   .dropDown {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     cursor: pointer;
+    position: relative;
   }
   .navArrow {
     height: 45px;
@@ -67,6 +76,38 @@ nav {
     }
     &:active {
       background-color: map-get($map: $webColors, $key: "darkOrange");
+    }
+  }
+}
+.dropDownMenu {
+  width: 437px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  position: absolute;
+  top: 92px;
+  a {
+    width: 100%;
+    color: #ffffff;
+    background-color: map-get($map: $webColors, $key: "dimGray");
+    padding: 22.5px;
+    text-align: center;
+    &:hover {
+      background-color: map-get($map: $webColors, $key: "lightDimGray");
+    }
+  }
+  .dropDownArrow {
+    height: 23px;
+    width: 41px;
+    filter: $dimGrayFilter;
+    transform: rotate(180deg);
+    margin-bottom: -13px;
+    img {
+      // height: 100%;
+      width: 100%;
+      object-fit: none;
+      object-position: center;
     }
   }
 }

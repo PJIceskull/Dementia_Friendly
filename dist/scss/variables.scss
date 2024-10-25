@@ -16,7 +16,7 @@ $webColors: (
   "purple": $color2,
   "lightPurple": $color5,
   "darkPurple": $color6,
-  "dimgray": $color7,
+  "dimGray": $color7,
   "lightDimGray": $color8,
 );
 // For calling colors to use in CSS use map-get() line. Example code can be seen below
@@ -28,6 +28,8 @@ $orangeFilter: brightness(0) saturate(100%) invert(45%) sepia(86%)
   saturate(2800%) hue-rotate(348deg) brightness(100%) contrast(103%);
 $purpleFilter: brightness(0) saturate(100%) invert(18%) sepia(23%)
   saturate(5703%) hue-rotate(267deg) brightness(98%) contrast(137%);
+$dimGrayFilter: brightness(0) saturate(100%) invert(30%) sepia(0%)
+  saturate(2593%) hue-rotate(316deg) brightness(95%) contrast(70%);
 
 // Device Sizes
 $site-width: 1280px;
