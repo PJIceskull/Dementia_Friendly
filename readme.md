@@ -20,7 +20,7 @@ This is the code repository for the Dementia Friendly Indianapolis website. Belo
 
 ## About Project
 
-This project is to establish a website for the Dementia Friendly Indianapolis initiative. [Dementia Friendly Indianapolis]() (started
+This project is to establish a website for the Dementia Friendly Indianapolis initiative. [Dementia Friendly Indianapolis](https://www.dementiafriendsindiana.org/) (started
 in 2023) is an initiative focused on creating an inclusive environment for those living with dementia and their care partners through
 **C.A.R.E (community events, awareness, resources, and education)**.
 
