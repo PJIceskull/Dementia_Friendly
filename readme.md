@@ -20,11 +20,11 @@ This is the code repository for the Dementia Friendly Indianapolis website. Belo
 
 ## About Project
 
-This project is to establish a website for the Dementia Friendly Indianapolis initiative. [Dementia Friendly Indianapolis](https://www.dementiafriendsindiana.org/) (started
+This project is to establish a website for the **Dementia Friendly Indianapolis initiative**. Dementia Friendly Indianapolis (started
 in 2023) is an initiative focused on creating an inclusive environment for those living with dementia and their care partners through
 **C.A.R.E (community events, awareness, resources, and education)**.
 
-We are a part of the Dementia Friendly Indiana Community network, among 13 other communities in Indiana. For more information about what the DFA network is, check out [www.dfamerica.org](www.dfamerica.org). The initiative is governed by a cross-sector action team with multiple organizations involved, led by **CICOA’s Dementia Programs Team**.
+We are a part of the [Dementia Friendly Indiana Community network](https://www.dementiafriendsindiana.org/), among 13 other communities in Indiana. For more information about what the DFA network is, check out [www.dfamerica.org](www.dfamerica.org). The initiative is governed by a cross-sector action team with multiple organizations involved, led by **CICOA’s Dementia Programs Team**.
 
 DFIndy hosts various events such as memory cafes (a safe space for someone living with dementia and their care partner to gather and
 connect with others), business trainings, and an annual Fall Festival.
