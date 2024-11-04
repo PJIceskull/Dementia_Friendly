@@ -68,20 +68,20 @@ nav {
     // padding: clamp(0.625rem, 0.4891vw, 0.9063rem) clamp(1.375rem, 1.5217vw, 2.25rem);
     // padding: clamp(10px, 0.4891vw, 14.5px) clamp(22px, 1.5217vw, 14.5px);
     border-radius: 100px;
-    transition-duration: 0.6s;
+    transition-duration: 0.3s;
     a {
       // font-size: 30px; // Fixed Value
       font-size: clamp(0.9375rem, 1.6304vw, 1.875rem);
       color: #ffffff;
     }
     &:hover {
-      background-color: map-get($map: $webColors, $key: "lightOrange");
+      background-color: map-get($map: $webColors, $key: "darkOrange");
       a {
         color: #ffffff;
       }
     }
     &:active {
-      background-color: map-get($map: $webColors, $key: "darkOrange");
+      background-color: map-get($map: $webColors, $key: "lightOrange");
     }
   }
 }
