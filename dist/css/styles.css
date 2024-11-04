@@ -418,6 +418,7 @@ button {
 
 .homeSection {
   box-shadow: 0px 0px 20px 0 rgba(0, 0, 0, 0.13);
+  padding: 50px 0;
 }
 
 .actionTeamSect .sectionPhoto {
@@ -477,6 +478,9 @@ button {
   object-fit: contain;
 }
 
+.eventTitle {
+  max-width: 600px;
+}
 .eventTitle h2 {
   font-family: Inter_SemiBold;
   font-size: 48px;
@@ -484,6 +488,7 @@ button {
 .eventTitle hr {
   width: 241px;
   border: 1px solid #000000;
+  margin-bottom: 21px;
 }
 
 /*# sourceMappingURL=styles.css.map */
