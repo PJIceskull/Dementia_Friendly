@@ -34,6 +34,9 @@
     font-family: Inter_Bold;
     font-style: italic;
     font-size: 64px;
+    text-align: center;
+    margin-top: 75px;
+    margin-bottom: 21px;
   }
 }
 .homeSection,
@@ -56,7 +59,7 @@
   }
   article {
     max-width: 580px;
-    height: 430px;
+    min-height: 430px;
     display: flex;
     align-items: flex-start;
     justify-content: space-evenly;
@@ -108,8 +111,6 @@
   }
 }
 .actionTeamLogos {
-  //   width: 1280px;
-  //   margin: 0 auto;
   border-bottom: 2px solid map-get($map: $webColors, $key: "purple");
   h2 {
     font-family: Inter_Medium;
@@ -121,12 +122,9 @@
     max-width: 1280px;
     min-height: 170px;
     margin: 0 auto;
-    // display: flex;
-    // align-items: center;
-    // justify-content: space-evenly;
     display: grid;
     grid-template-columns: auto auto auto auto auto;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     gap: 30px;
   }
   .businessLogo {
@@ -137,5 +135,15 @@
       height: 100%;
       object-fit: contain;
     }
+  }
+}
+.eventTitle {
+  h2 {
+    font-family: Inter_SemiBold;
+    font-size: 48px;
+  }
+  hr {
+    width: 241px;
+    border: 1px solid #000000;
   }
 }

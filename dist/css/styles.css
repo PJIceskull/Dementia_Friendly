@@ -368,6 +368,9 @@ button {
   font-family: Inter_Bold;
   font-style: italic;
   font-size: 64px;
+  text-align: center;
+  margin-top: 75px;
+  margin-bottom: 21px;
 }
 
 .homeSection,
@@ -394,7 +397,7 @@ button {
 .homeSection article,
 .actionTeamSect article {
   max-width: 580px;
-  height: 430px;
+  min-height: 430px;
   display: flex;
   align-items: flex-start;
   justify-content: space-evenly;
@@ -462,7 +465,6 @@ button {
   margin: 0 auto;
   display: grid;
   grid-template-columns: auto auto auto auto auto;
-  flex-wrap: wrap;
   gap: 30px;
 }
 .actionTeamLogos .businessLogo {
@@ -473,6 +475,15 @@ button {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+.eventTitle h2 {
+  font-family: Inter_SemiBold;
+  font-size: 48px;
+}
+.eventTitle hr {
+  width: 241px;
+  border: 1px solid #000000;
 }
 
 /*# sourceMappingURL=styles.css.map */
