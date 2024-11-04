@@ -57,10 +57,15 @@ a {
 }
 
 #app {
-  max-width: 1280px;
+  max-width: 1280vw;
   min-height: 100%;
-  background-color: cornflowerblue;
   margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 nav {
@@ -123,20 +128,20 @@ nav .donateBTN {
   background-color: #ff5b1a;
   padding: 10px 22px;
   border-radius: 100px;
-  transition-duration: 0.6s;
+  transition-duration: 0.3s;
 }
 nav .donateBTN a {
   font-size: clamp(0.9375rem, 1.6304vw, 1.875rem);
   color: #ffffff;
 }
 nav .donateBTN:hover {
-  background-color: #ff9589;
+  background-color: #af3031;
 }
 nav .donateBTN:hover a {
   color: #ffffff;
 }
 nav .donateBTN:active {
-  background-color: #af3031;
+  background-color: #ff9589;
 }
 
 .dropDownMenu {
@@ -303,6 +308,171 @@ footer .bottomSection p {
   footer .topSection .contactSection {
     max-width: 300px;
   }
+}
+button {
+  font-family: Inter_Bold;
+  font-size: 20px;
+  text-transform: capitalize;
+  background-color: red;
+  border-radius: 100px;
+  border-style: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.purpleBTN {
+  background-color: #60007f;
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+.purpleBTN:hover {
+  background-color: #4e0047;
+}
+.purpleBTN:active {
+  background-color: #a7589b;
+}
+
+.homeHeader {
+  height: 423px;
+  max-width: 1280vw;
+}
+
+.homeHero {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/background/homeHero.png);
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+  padding-left: 15%;
+}
+.homeHero h1 {
+  color: #ffffff;
+  font-family: Inter_Bold;
+  font-size: 80px;
+  max-width: 715px;
+  text-wrap: balance;
+  margin-bottom: 0;
+}
+.homeHero .purpleBTN {
+  width: 245px;
+  height: 72px;
+}
+
+.homeContent h1 {
+  color: #60007f;
+  font-family: Inter_Bold;
+  font-style: italic;
+  font-size: 64px;
+}
+
+.homeSection,
+.actionTeamSect {
+  min-height: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+.homeSection .sectionPhoto,
+.actionTeamSect .sectionPhoto {
+  width: 636px;
+  height: 336px;
+  overflow: hidden;
+}
+.homeSection .sectionPhoto img,
+.actionTeamSect .sectionPhoto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.homeSection article,
+.actionTeamSect article {
+  max-width: 580px;
+  height: 430px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.homeSection article p,
+.actionTeamSect article p {
+  font-size: 24px;
+  line-height: 40px;
+  text-wrap: pretty;
+}
+.homeSection article .purpleBTN,
+.actionTeamSect article .purpleBTN {
+  font-size: 20px;
+  height: 57px;
+  padding: 5px 57px;
+}
+
+.homeSection {
+  box-shadow: 0px 0px 20px 0 rgba(0, 0, 0, 0.13);
+}
+
+.actionTeamSect .sectionPhoto {
+  width: 636px;
+  height: 336px;
+  overflow: hidden;
+}
+.actionTeamSect .sectionPhoto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.actionTeamSect article {
+  max-width: 580px;
+  height: 430px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.actionTeamSect article p {
+  font-size: 24px;
+  line-height: 40px;
+  text-wrap: pretty;
+}
+.actionTeamSect article .purpleBTN {
+  font-size: 20px;
+  height: 57px;
+  padding: 5px 57px;
+}
+
+.actionTeamLogos {
+  border-bottom: 2px solid #60007f;
+}
+.actionTeamLogos h2 {
+  font-family: Inter_Medium;
+  font-size: 40px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.actionTeamLogos .logoGallery {
+  max-width: 1280px;
+  min-height: 170px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.actionTeamLogos .businessLogo {
+  width: 100%;
+  height: 100%;
+}
+.actionTeamLogos .businessLogo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 /*# sourceMappingURL=styles.css.map */

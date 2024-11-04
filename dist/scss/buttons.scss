@@ -1,0 +1,21 @@
+button {
+  font-family: Inter_Bold;
+  font-size: 20px;
+  text-transform: capitalize;
+  background-color: red;
+  border-radius: 100px;
+  border-style: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.purpleBTN {
+  background-color: map-get($map: $webColors, $key: "purple");
+  color: #ffffff;
+  transition-duration: 0.2s;
+  &:hover {
+    background-color: map-get($map: $webColors, $key: "darkPurple");
+  }
+  &:active {
+    background-color: map-get($map: $webColors, $key: "lightPurple");
+  }
+}

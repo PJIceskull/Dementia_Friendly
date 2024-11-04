@@ -32,7 +32,8 @@ $dimGrayFilter: brightness(0) saturate(100%) invert(30%) sepia(0%)
   saturate(2593%) hue-rotate(316deg) brightness(95%) contrast(70%);
 
 // Device Sizes
-$site-width: 1280px;
+// $site-width: 1280px;
+$site-width: 1280vw;
 $site-height: 800px;
 $web-width: 1440px;
 $iPad-width: 780px;
