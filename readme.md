@@ -14,11 +14,16 @@ This is the code repository for the Dementia Friendly Indianapolis website. Belo
   - [lib](#lib)
   - [Backend](#src--backend)
     - [Installing Webpack](#installing-webpack)
+- [Authors](#authors)
 
 ## Links to Preview Site
 
 - [Web4 link]()
 - [Github Pages](https://pjiceskull.github.io/Dementia_Friendly/dist)
+
+Design Protoype
+
+- [Figma Prototype](https://www.figma.com/design/dfYjQrinWz1wNEav3O2ngM/DFIndy-Wireframe?node-id=0-1&t=8IxyJq4GGsu6haqw-1)
 
 ## About Project
 
@@ -163,3 +168,5 @@ The `src` folder is where we will working with my javascript files. Similar to o
    In the NPM SCRIPTS section of your explorer window, click the play button next `build-webpack` to compile your javascript code.
 
 _Add any programming languages, libraries, or frameworks you used in the project under the **readme file**._
+
+## Authors
