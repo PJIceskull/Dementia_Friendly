@@ -1,0 +1,56 @@
+.resourceNav {
+  //   max-width: 1150px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 38px;
+  flex-wrap: wrap;
+  a {
+    text-decoration: none;
+  }
+}
+.resourceCard {
+  background-color: #fff;
+  width: 358px;
+  //   min-height: 449px;
+  min-height: 445px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  //   gap: 47px;
+  box-shadow: 0px 0px 20px rgba($color: #000000, $alpha: 0.22);
+  .cardImage {
+    // height: 218px;
+    width: 100%;
+    height: 50%;
+  }
+  .pageTitle {
+    color: map-get($map: $webColors, $key: "purple");
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 47px;
+    transition-duration: 0.4s;
+    min-height: 226px;
+    h1 {
+      font-size: 36px;
+      font-family: Inter_ExtraBold;
+      font-style: italic;
+      margin-bottom: 0;
+      //   text-align: center;
+    }
+  }
+  &:hover {
+    .pageTitle {
+      background-color: map-get($map: $webColors, $key: "darkPurple");
+      color: #ffffff;
+    }
+  }
+  &:active {
+    transition-duration: 0.2s;
+    .pageTitle {
+      background-color: map-get($map: $webColors, $key: "lightPurple");
+    }
+  }
+}

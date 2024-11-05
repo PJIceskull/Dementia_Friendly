@@ -63,6 +63,14 @@ a {
   padding-bottom: 60px;
 }
 
+.centerContent {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
 img {
   width: 100%;
   height: 100%;
@@ -723,6 +731,57 @@ button {
   font-size: 20px;
   font-family: Inter_SemiBold;
   padding: 21px 105px;
+}
+
+.resourceNav {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 38px;
+  flex-wrap: wrap;
+}
+.resourceNav a {
+  text-decoration: none;
+}
+
+.resourceCard {
+  background-color: #fff;
+  width: 358px;
+  min-height: 445px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.22);
+}
+.resourceCard .cardImage {
+  width: 100%;
+  height: 50%;
+}
+.resourceCard .pageTitle {
+  color: #60007f;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 47px;
+  transition-duration: 0.4s;
+  min-height: 226px;
+}
+.resourceCard .pageTitle h1 {
+  font-size: 36px;
+  font-family: Inter_ExtraBold;
+  font-style: italic;
+  margin-bottom: 0;
+}
+.resourceCard:hover .pageTitle {
+  background-color: #4e0047;
+  color: #ffffff;
+}
+.resourceCard:active {
+  transition-duration: 0.2s;
+}
+.resourceCard:active .pageTitle {
+  background-color: #a7589b;
 }
 
 /*# sourceMappingURL=styles.css.map */
