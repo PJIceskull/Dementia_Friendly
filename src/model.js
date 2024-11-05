@@ -21,7 +21,7 @@ export function changeRoute() {
     });
   } else {
     $.get(`pages/home.html`, function (data) {
-      console.log("data " + data);
+      // console.log("data " + data);
       $("#app").html(data);
     });
   }
