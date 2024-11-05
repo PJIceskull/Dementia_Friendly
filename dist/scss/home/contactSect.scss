@@ -1,0 +1,81 @@
+.contactUs {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  margin-top: 95px;
+}
+.contactText {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  gap: 60px;
+  h1,
+  p {
+    margin-bottom: 0;
+  }
+  h1 {
+    color: #000000;
+    font-family: Inter_Medium;
+    font-size: 74px;
+    font-style: normal;
+  }
+  p {
+    font-size: 24px;
+    // max-width: 438px;
+    max-width: 400px;
+  }
+  .dfLogo {
+    max-width: 310px;
+  }
+}
+.contactForm {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  gap: 27px;
+  .inputWrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    column-gap: 33px;
+    input {
+      width: 50%;
+    }
+  }
+  input,
+  .messageBox {
+    font-family: Inter_Regular;
+    font-size: 20px;
+    padding: 15px;
+    border: 2px solid #000000;
+    width: 100%;
+    &:focus {
+      background-color: #ededed;
+    }
+    outline: none;
+  }
+  .messageBox {
+    height: 359px;
+  }
+  select {
+    font-family: Inter_Regular;
+    font-size: 20px;
+    padding: 15px;
+    width: 100%;
+    border: 2px solid #000000;
+    outline: none;
+    option {
+      background-color: #ededed;
+      &::selection {
+        background-color: #ededed;
+      }
+    }
+  }
+  .purpleBTN {
+    font-size: 20px;
+    font-family: Inter_SemiBold;
+    padding: 21px 105px;
+  }
+}
