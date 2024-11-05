@@ -1,12 +1,12 @@
 // Import
 import { changeRoute } from "./model.js";
 
-function initListeners() {}
-
 function initURLListener() {
-  $(window).on("hashChange", changeRoute);
+  $(window).on("hashchange", changeRoute);
   changeRoute();
 }
+
+function initListeners() {}
 
 $(document).ready(function () {
   initURLListener();

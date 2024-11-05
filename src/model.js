@@ -1,7 +1,7 @@
 export function changeRoute() {
   let hashTag = window.location.hash;
   let pageID = hashTag.replace("#", "");
-  //   console.log(hashTag + ' ' + pageID);
+  console.log(hashTag + " " + pageID);
   // Step 1: Access the current URL
   //   let currentURL = window.location.href;
 
