@@ -576,15 +576,19 @@ button {
   justify-content: space-evenly;
 }
 
+@media screen and (max-width: 1280px) {
+  .homeSection,
+  .fallSection {
+    flex-direction: column;
+  }
+}
 .homeGallery {
-  background-color: cornflowerblue;
   width: 728px;
   display: flex;
   flex-direction: column;
   gap: 27px;
 }
 .homeGallery .galleryItems {
-  background-color: lime;
   max-width: 728px;
   display: flex;
   align-items: center;

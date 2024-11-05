@@ -1,5 +1,4 @@
 .homeGallery {
-  background-color: cornflowerblue;
   //   min-height: 600px;
   // max-width: 728px;
   width: 728px;
@@ -7,7 +6,6 @@
   flex-direction: column;
   gap: 27px;
   .galleryItems {
-    background-color: lime;
     max-width: 728px;
     display: flex;
     align-items: center;
