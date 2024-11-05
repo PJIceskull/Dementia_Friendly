@@ -456,6 +456,9 @@ button {
   max-width: 580px;
 }
 
+.actionTeamSect {
+  padding: 0 50px;
+}
 .actionTeamSect .sectionPhoto {
   width: 636px;
   height: 336px;
@@ -571,6 +574,63 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+}
+
+.homeGallery {
+  background-color: cornflowerblue;
+  width: 728px;
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+.homeGallery .galleryItems {
+  background-color: lime;
+  max-width: 728px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.homeGallery .galleryItem1,
+.homeGallery .galleryItem2,
+.homeGallery .galleryItem3,
+.homeGallery .galleryItem4 {
+  background-color: tomato;
+}
+.homeGallery .galleryItem1,
+.homeGallery .galleryItem2 {
+  height: 294px;
+}
+.homeGallery .galleryItem1 {
+  width: 45%;
+}
+.homeGallery .galleryItem2 {
+  width: 55%;
+}
+.homeGallery .galleryItem3,
+.homeGallery .galleryItem4 {
+  height: 407px;
+}
+.homeGallery .galleryItem3 {
+  width: 55%;
+}
+.homeGallery .galleryItem4 {
+  width: 45%;
+}
+
+.fallSection .homeGallery {
+  gap: 21px;
+}
+.fallSection .homeGallery .galleryItems {
+  gap: 22px;
+}
+.fallSection .homeGallery .galleryItem1,
+.fallSection .homeGallery .galleryItem2 {
+  height: 235px;
+}
+.fallSection .homeGallery .galleryItem3,
+.fallSection .homeGallery .galleryItem4 {
+  height: 325px;
 }
 
 /*# sourceMappingURL=styles.css.map */

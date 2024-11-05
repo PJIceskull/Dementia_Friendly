@@ -1,0 +1,59 @@
+.homeGallery {
+  background-color: cornflowerblue;
+  //   min-height: 600px;
+  // max-width: 728px;
+  width: 728px;
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  .galleryItems {
+    background-color: lime;
+    max-width: 728px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+  .galleryItem1,
+  .galleryItem2,
+  .galleryItem3,
+  .galleryItem4 {
+    background-color: tomato;
+  }
+  .galleryItem1,
+  .galleryItem2 {
+    height: 294px;
+  }
+  .galleryItem1 {
+    width: 45%;
+  }
+  .galleryItem2 {
+    width: 55%;
+  }
+  .galleryItem3,
+  .galleryItem4 {
+    height: 407px;
+  }
+  .galleryItem3 {
+    width: 55%;
+  }
+  .galleryItem4 {
+    width: 45%;
+  }
+}
+.fallSection {
+  .homeGallery {
+    gap: 21px;
+    .galleryItems {
+      gap: 22px;
+    }
+    .galleryItem1,
+    .galleryItem2 {
+      height: 235px;
+    }
+    .galleryItem3,
+    .galleryItem4 {
+      height: 325px;
+    }
+  }
+}
