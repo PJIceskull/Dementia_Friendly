@@ -374,7 +374,8 @@ button {
 }
 
 .homeSection,
-.actionTeamSect {
+.actionTeamSect,
+.fallSection {
   min-height: 550px;
   display: flex;
   align-items: center;
@@ -382,21 +383,23 @@ button {
   gap: 60px;
 }
 .homeSection .sectionPhoto,
-.actionTeamSect .sectionPhoto {
+.actionTeamSect .sectionPhoto,
+.fallSection .sectionPhoto {
   width: 636px;
   height: 336px;
   overflow: hidden;
 }
 .homeSection .sectionPhoto img,
-.actionTeamSect .sectionPhoto img {
+.actionTeamSect .sectionPhoto img,
+.fallSection .sectionPhoto img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
 }
 .homeSection article,
-.actionTeamSect article {
-  max-width: 580px;
+.actionTeamSect article,
+.fallSection article {
   min-height: 430px;
   display: flex;
   align-items: flex-start;
@@ -404,21 +407,53 @@ button {
   flex-direction: column;
 }
 .homeSection article p,
-.actionTeamSect article p {
+.actionTeamSect article p,
+.fallSection article p {
   font-size: 24px;
   line-height: 40px;
   text-wrap: pretty;
 }
+.homeSection article strong,
+.actionTeamSect article strong,
+.fallSection article strong {
+  font-family: Inter_Bold;
+}
 .homeSection article .purpleBTN,
-.actionTeamSect article .purpleBTN {
+.actionTeamSect article .purpleBTN,
+.fallSection article .purpleBTN {
   font-size: 20px;
   height: 57px;
   padding: 5px 57px;
 }
+.homeSection article a,
+.actionTeamSect article a,
+.fallSection article a {
+  font-family: Inter_Bold;
+  color: #000000;
+  text-underline-offset: 4px;
+}
+.homeSection article a:hover,
+.actionTeamSect article a:hover,
+.fallSection article a:hover {
+  color: #ff5b1a;
+}
+.homeSection article a:active,
+.actionTeamSect article a:active,
+.fallSection article a:active {
+  color: #ff9589;
+}
+.homeSection .eventDescription,
+.actionTeamSect .eventDescription,
+.fallSection .eventDescription {
+  max-width: 640px;
+}
 
 .homeSection {
   box-shadow: 0px 0px 20px 0 rgba(0, 0, 0, 0.13);
-  padding: 50px 0;
+  padding: 50px;
+}
+.homeSection .missionText {
+  max-width: 580px;
 }
 
 .actionTeamSect .sectionPhoto {
@@ -453,6 +488,7 @@ button {
 
 .actionTeamLogos {
   border-bottom: 2px solid #60007f;
+  padding-bottom: 60px;
 }
 .actionTeamLogos h2 {
   font-family: Inter_Medium;
@@ -478,17 +514,63 @@ button {
   object-fit: contain;
 }
 
+.fallSection {
+  background-color: #ba907c;
+  color: #ffffff;
+  padding: 101px 50px;
+}
+.fallSection article .eventTitle hr {
+  border: 1px solid #ffffff;
+}
+.fallSection article a {
+  color: #ffffff;
+}
+.fallSection article .buttonWrap {
+  margin-top: 37px;
+}
+.fallSection article .purpleBTN {
+  padding: 5px 19px;
+  font-family: Inter_SemiBold;
+}
+
 .eventTitle {
   max-width: 600px;
 }
 .eventTitle h2 {
   font-family: Inter_SemiBold;
   font-size: 48px;
+  margin-bottom: 8px;
 }
 .eventTitle hr {
   width: 241px;
   border: 1px solid #000000;
   margin-bottom: 21px;
+}
+
+.aboutGrid {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 30px;
+}
+.aboutGrid .aboutItem h3 {
+  color: #60007f;
+  font-family: Inter_Bold;
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+.aboutGrid .aboutItem p {
+  margin-bottom: 0;
+  line-height: 35px;
+}
+.aboutGrid .aboutItem ul li {
+  margin-left: 18px;
+}
+
+.buttonWrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 /*# sourceMappingURL=styles.css.map */
