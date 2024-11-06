@@ -77,6 +77,11 @@ img {
   object-fit: cover;
 }
 
+.contentWrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
 nav {
   height: 160px;
   display: flex;
@@ -778,10 +783,72 @@ button {
   color: #ffffff;
 }
 .resourceCard:active {
-  transition-duration: 0.2s;
+  transition-duration: 0.25s;
 }
 .resourceCard:active .pageTitle {
   background-color: #a7589b;
+}
+
+.resourceHeader h1 {
+  color: #60007f;
+  margin-bottom: 0;
+  font-family: Inter_Bold;
+  font-size: 64px;
+}
+.resourceHeader .backLink {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 24px;
+  max-width: 300px;
+  margin-bottom: 62px;
+}
+.resourceHeader .backLink:hover a {
+  color: #ff5b1a;
+}
+.resourceHeader .backLink:hover .leftArrow {
+  filter: brightness(0) saturate(100%) invert(45%) sepia(86%) saturate(2800%) hue-rotate(348deg) brightness(100%) contrast(103%);
+}
+.resourceHeader .backLink:active a {
+  color: #ff9589;
+}
+.resourceHeader .backLink:active .leftArrow {
+  filter: brightness(0) saturate(100%) invert(66%) sepia(6%) saturate(3383%) hue-rotate(317deg) brightness(102%) contrast(100%);
+}
+.resourceHeader .backLink a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 24px;
+}
+.resourceHeader .backLink .leftArrow {
+  width: 36px;
+  height: 36px;
+  filter: brightness(0) saturate(100%);
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+.resourceLinks {
+  max-width: 1180px;
+  font-size: 16px;
+}
+.resourceLinks a,
+.resourceLinks p {
+  font-family: Inter_Bold;
+}
+.resourceLinks a {
+  color: #000000;
+  text-underline-offset: 3px;
+}
+.resourceLinks a:hover {
+  color: #ff5b1a;
+}
+.resourceLinks a:active {
+  color: #ff9589;
+}
+.resourceLinks ul {
+  list-style: none;
+  line-height: 50px;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -48,9 +48,75 @@
     }
   }
   &:active {
-    transition-duration: 0.2s;
+    transition-duration: 0.25s;
     .pageTitle {
       background-color: map-get($map: $webColors, $key: "lightPurple");
     }
+  }
+}
+.resourceHeader {
+  h1 {
+    color: map-get($map: $webColors, $key: "purple");
+    margin-bottom: 0;
+    font-family: Inter_Bold;
+    font-size: 64px;
+  }
+  .backLink {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px;
+    max-width: 300px;
+    margin-bottom: 62px;
+    &:hover {
+      a {
+        color: map-get($map: $webColors, $key: "orange");
+      }
+      .leftArrow {
+        filter: $orangeFilter;
+      }
+    }
+    &:active {
+      a {
+        color: map-get($map: $webColors, $key: "lightOrange");
+      }
+      .leftArrow {
+        filter: $light_orangeFilter;
+      }
+    }
+    a {
+      color: #000000;
+      text-decoration: none;
+      font-size: 24px;
+    }
+    .leftArrow {
+      width: 36px;
+      height: 36px;
+      filter: brightness(0) saturate(100%);
+      overflow: hidden;
+      transition: 0.4s;
+    }
+  }
+}
+.resourceLinks {
+  max-width: 1180px;
+  font-size: 16px;
+  a,
+  p {
+    font-family: Inter_Bold;
+  }
+  a {
+    color: #000000;
+    text-underline-offset: 3px;
+    &:hover {
+      color: map-get($map: $webColors, $key: "orange");
+    }
+    &:active {
+      color: map-get($map: $webColors, $key: "lightOrange");
+    }
+  }
+  ul {
+    list-style: none;
+    line-height: 50px;
   }
 }
