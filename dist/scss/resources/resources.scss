@@ -55,6 +55,7 @@
   }
 }
 .resourceHeader {
+  margin-bottom: 44px;
   h1 {
     color: map-get($map: $webColors, $key: "purple");
     margin-bottom: 0;
