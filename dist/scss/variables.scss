@@ -26,6 +26,8 @@ $webColors: (
 // CSS filter lines to change the color of certain icons
 $orangeFilter: brightness(0) saturate(100%) invert(45%) sepia(86%)
   saturate(2800%) hue-rotate(348deg) brightness(100%) contrast(103%);
+$light_orangeFilter: brightness(0) saturate(100%) invert(66%) sepia(6%)
+  saturate(3383%) hue-rotate(317deg) brightness(102%) contrast(100%);
 $purpleFilter: brightness(0) saturate(100%) invert(18%) sepia(23%)
   saturate(5703%) hue-rotate(267deg) brightness(98%) contrast(137%);
 $dimGrayFilter: brightness(0) saturate(100%) invert(30%) sepia(0%)
