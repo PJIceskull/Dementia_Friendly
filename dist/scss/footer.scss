@@ -53,7 +53,7 @@ footer {
         align-items: flex-start;
         justify-content: space-evenly;
         flex-direction: column;
-        gap: 50px;
+        gap: 45px;
         a {
           font-size: 20px;
           &:hover {
@@ -72,10 +72,12 @@ footer {
       align-items: flex-start;
       justify-content: space-between;
       flex-direction: column;
+      gap: 44px;
       min-height: 300px;
-      max-width: 400px;
+      max-width: 500px;
     }
     .socialGroup {
+      font-size: 24px;
       p {
         margin-bottom: 22px;
       }
@@ -103,6 +105,18 @@ footer {
         height: 100%;
         width: 100%;
         object-fit: cover;
+      }
+    }
+    .footerText {
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: column;
+      gap: 33px;
+      p {
+        font-family: Inter_Light;
+        margin-bottom: 0;
       }
     }
   }
