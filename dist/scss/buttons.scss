@@ -18,3 +18,35 @@ button {
     background-color: map-get($map: $webColors, $key: "lightPurple");
   }
 }
+.topButton {
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 100px;
+  padding: 18px 27px;
+  color: #000000;
+  font-size: 24px;
+  font-family: Inter_Regular;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 15px;
+  a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    // gap: 28px;
+    gap: 15px;
+  }
+  .arrowUp {
+    width: 17px;
+    display: flex;
+    // transform: rotate(270deg);
+    // overflow: hidden;
+    img {
+      width: 125%;
+    }
+  }
+}
