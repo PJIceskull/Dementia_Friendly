@@ -6,7 +6,7 @@
 }
 .contactText {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-evenly;
   flex-direction: column;
   gap: 60px;
@@ -27,6 +27,7 @@
   }
   .dfLogo {
     max-width: 310px;
+    margin: 0 auto;
   }
 }
 .contactForm {
