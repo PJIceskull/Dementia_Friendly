@@ -252,7 +252,7 @@ footer .topSection .linkSection .linkGroup {
   align-items: flex-start;
   justify-content: space-evenly;
   flex-direction: column;
-  gap: 50px;
+  gap: 45px;
 }
 footer .topSection .linkSection .linkGroup a {
   font-size: 20px;
@@ -270,8 +270,12 @@ footer .topSection .contactSection {
   align-items: flex-start;
   justify-content: space-between;
   flex-direction: column;
+  gap: 44px;
   min-height: 300px;
-  max-width: 400px;
+  max-width: 500px;
+}
+footer .topSection .socialGroup {
+  font-size: 24px;
 }
 footer .topSection .socialGroup p {
   margin-bottom: 22px;
@@ -300,6 +304,18 @@ footer .topSection .socialBox img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+footer .topSection .footerText {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  gap: 33px;
+}
+footer .topSection .footerText p {
+  font-family: Inter_Light;
+  margin-bottom: 0;
 }
 footer .bottomSection {
   background-color: #ededed;
@@ -347,6 +363,36 @@ button {
   background-color: #a7589b;
 }
 
+.topButton {
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 100px;
+  padding: 18px 27px;
+  color: #000000;
+  font-size: 24px;
+  font-family: Inter_Regular;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 15px;
+}
+.topButton a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 15px;
+}
+.topButton .arrowUp {
+  width: 17px;
+  display: flex;
+}
+.topButton .arrowUp img {
+  width: 125%;
+}
+
 .homeHeader {
   height: 423px;
   max-width: 1280vw;
@@ -378,6 +424,9 @@ button {
   height: 72px;
 }
 
+.homeContent {
+  position: relative;
+}
 .homeContent h1 {
   color: #60007f;
   font-family: Inter_Bold;
@@ -595,6 +644,75 @@ button {
   justify-content: space-evenly;
 }
 
+.peopleSection {
+  margin-top: 89px;
+  margin-bottom: 85px;
+}
+
+.personCard {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 98px;
+}
+.personCard .personPhoto {
+  width: 415px;
+  height: 415px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: -22px 24px #60007f;
+}
+.personCard .personText {
+  max-width: 789px;
+}
+.personCard .personText .personTitle {
+  margin-bottom: 30px;
+}
+.personCard .personText .personTitle h2,
+.personCard .personText .personTitle h3 {
+  margin-bottom: 11px;
+}
+.personCard .personText .personTitle h4 {
+  margin-bottom: 0;
+}
+.personCard .personText h2,
+.personCard .personText h3,
+.personCard .personText h4,
+.personCard .personText a {
+  color: #60007f;
+}
+.personCard .personText h3,
+.personCard .personText h4 {
+  font-style: italic;
+}
+.personCard .personText h2 {
+  font-family: Inter_Bold;
+  font-size: 40px;
+}
+.personCard .personText h3 {
+  font-family: Inter_Medium;
+  font-size: 24px;
+}
+.personCard .personText h4,
+.personCard .personText a {
+  font-family: Inter_Regular;
+  font-size: 22px;
+  font-weight: normal;
+}
+.personCard .personText a {
+  text-underline-offset: 4px;
+}
+.personCard .personText a:hover {
+  color: #a7589b;
+}
+.personCard .personText a:active {
+  color: #4e0047;
+}
+.personCard .personText p {
+  font-size: 20px;
+  line-height: 34px;
+}
+
 @media screen and (max-width: 1280px) {
   .homeSection,
   .fallSection {
@@ -665,7 +783,7 @@ button {
 
 .contactText {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-evenly;
   flex-direction: column;
   gap: 60px;
@@ -686,6 +804,7 @@ button {
 }
 .contactText .dfLogo {
   max-width: 310px;
+  margin: 0 auto;
 }
 
 .contactForm {
