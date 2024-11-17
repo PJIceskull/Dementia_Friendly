@@ -30,6 +30,7 @@ button {
   align-items: center;
   justify-content: space-evenly;
   gap: 15px;
+  transition-duration: 0.25s;
   a {
     color: #000000;
     text-decoration: none;
@@ -43,10 +44,16 @@ button {
   .arrowUp {
     width: 17px;
     display: flex;
-    // transform: rotate(270deg);
-    // overflow: hidden;
+    transition: ease-in 0.15s;
     img {
       width: 125%;
+    }
+  }
+  &:hover {
+    border: 1px solid map-get($map: $webColors, $key: "orange");
+    color: map-get($map: $webColors, $key: "orange");
+    .arrowUp {
+      filter: $orangeFilter;
     }
   }
 }

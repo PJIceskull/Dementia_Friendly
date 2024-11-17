@@ -375,6 +375,7 @@ button {
   align-items: center;
   justify-content: space-evenly;
   gap: 15px;
+  transition-duration: 0.25s;
 }
 .topButton a {
   color: #000000;
@@ -388,40 +389,62 @@ button {
 .topButton .arrowUp {
   width: 17px;
   display: flex;
+  transition: ease-in 0.15s;
 }
 .topButton .arrowUp img {
   width: 125%;
+}
+.topButton:hover {
+  border: 1px solid #ff5b1a;
+  color: #ff5b1a;
+}
+.topButton:hover .arrowUp {
+  filter: brightness(0) saturate(100%) invert(45%) sepia(86%) saturate(2800%) hue-rotate(348deg) brightness(100%) contrast(103%);
 }
 
 .homeHeader {
   height: 423px;
   max-width: 1280vw;
-}
-
-.homeHero {
-  width: 100%;
-  height: 100%;
   background-image: url(../images/background/homeHero.png);
   background-size: cover;
   background-position: top;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  padding-left: clamp(88px, 9.933vw, 177px);
+}
+
+.homeHeroText {
+  height: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
   gap: 25px;
-  padding-left: 15%;
 }
-.homeHero h1 {
+.homeHeroText h1 {
   color: #ffffff;
   font-family: Inter_Bold;
-  font-size: 80px;
+  font-size: clamp(64px, 45.7143px + 1.7857vw, 80px);
   max-width: 715px;
   text-wrap: balance;
   margin-bottom: 0;
 }
-.homeHero .purpleBTN {
+.homeHeroText .purpleBTN {
   width: 245px;
   height: 72px;
+}
+
+.homeIMG {
+  width: 46.25%;
+  height: 100%;
+}
+.homeIMG img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .homeContent {
@@ -435,6 +458,12 @@ button {
   text-align: center;
   margin-top: 75px;
   margin-bottom: 21px;
+}
+.homeContent .topButton {
+  position: fixed;
+  z-index: 10;
+  right: 58px;
+  bottom: 4vh;
 }
 
 .homeSection,
@@ -517,9 +546,73 @@ button {
   padding: 50px;
   position: relative;
   z-index: 2;
+  overflow: hidden;
 }
 .homeSection .missionText {
   max-width: 580px;
+}
+.homeSection .purpleRing {
+  border: 9px solid rgba(96, 0, 127, 0.24);
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+}
+.homeSection .ring1 {
+  height: 200px;
+  width: 200px;
+  left: -100px;
+  bottom: 63px;
+}
+.homeSection .ring2,
+.homeSection .ring3 {
+  height: 273px;
+  width: 273px;
+}
+.homeSection .ring2 {
+  left: -96px;
+  bottom: -107px;
+}
+.homeSection .ring3 {
+  top: -80px;
+  right: -65px;
+}
+
+.missionSect {
+  gap: 145px;
+}
+.missionSect .careVisual .purpleText {
+  color: #60007f;
+}
+.missionSect .careVisual .orangeText {
+  color: #ff5b1a;
+}
+.missionSect .careVisual .rowContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 195px;
+  margin: 10px;
+}
+.missionSect .careIcon {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  gap: 12px;
+}
+.missionSect .careIcon h2 {
+  font-size: 32px;
+  font-family: Inter_Bold;
+  margin-bottom: 0;
+  max-width: 195px;
+  text-align: center;
+}
+.missionSect .careIcon img {
+  max-width: 50px;
+  min-width: 45px;
+}
+.missionSect article p {
+  margin-bottom: 0;
 }
 
 .actionTeamSect {
@@ -529,6 +622,7 @@ button {
   width: 636px;
   height: 336px;
   overflow: hidden;
+  border-radius: 20px;
 }
 .actionTeamSect .sectionPhoto img {
   width: 100%;
@@ -538,7 +632,7 @@ button {
 }
 .actionTeamSect article {
   max-width: 580px;
-  height: 430px;
+  min-height: 430px;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -557,7 +651,7 @@ button {
 
 .actionTeamLogos {
   border-bottom: 2px solid #60007f;
-  padding-bottom: 60px;
+  padding: 0 25px 60px;
 }
 .actionTeamLogos h2 {
   font-family: Inter_Medium;
@@ -622,6 +716,7 @@ button {
   display: grid;
   grid-template-columns: auto auto;
   gap: 30px;
+  margin-bottom: 45px;
 }
 .aboutGrid .aboutItem h3 {
   color: #60007f;
@@ -634,7 +729,8 @@ button {
   line-height: 35px;
 }
 .aboutGrid .aboutItem ul li {
-  margin-left: 18px;
+  margin-left: 30px;
+  font-size: 24px;
 }
 
 .buttonWrap {
@@ -654,6 +750,7 @@ button {
   align-items: flex-start;
   justify-content: center;
   gap: 98px;
+  padding: 0 30px;
 }
 .personCard .personPhoto {
   width: 415px;
@@ -717,6 +814,32 @@ button {
   .homeSection,
   .fallSection {
     flex-direction: column;
+  }
+  .missionSect {
+    gap: 0;
+  }
+  .missionSect .careVisual {
+    margin-top: 75px;
+  }
+  .missionSect article p {
+    text-align: center;
+  }
+  .actionTeamSect {
+    margin: 45px 0 25px;
+    flex-direction: column-reverse;
+    gap: 25px;
+  }
+  .actionTeamSect article {
+    max-width: 80%;
+  }
+  .actionTeamSect article a {
+    margin: 0 auto;
+  }
+  .actionTeamSect .sectionPhoto {
+    width: 85%;
+  }
+  .actionTeamLogos {
+    padding: 15px 60px 25px;
   }
 }
 .homeGallery {
@@ -859,6 +982,19 @@ button {
   padding: 21px 105px;
 }
 
+@media screen and (max-width: 1280px) {
+  .contactUs {
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+  }
+  .contactUs .contactText {
+    gap: 25px;
+  }
+  .contactUs .contactText h1 {
+    margin-top: 0;
+  }
+}
 .resourceNav {
   margin: 0 auto;
   display: flex;
