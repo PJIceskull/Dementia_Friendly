@@ -213,7 +213,6 @@ footer .topSection {
   align-items: flex-start;
   justify-content: space-between;
   padding: 75px 25px;
-  flex-wrap: wrap;
   gap: 30px 25px;
 }
 footer .topSection .logoGroup {
@@ -333,9 +332,14 @@ footer .bottomSection p {
   font-family: Inter_Light;
 }
 
+@media screen and (max-width: 1500px) {
+  footer .topSection {
+    flex-wrap: wrap;
+  }
+}
 @media screen and (max-width: 1024px) {
   footer .topSection {
-    justify-content: space-between;
+    justify-content: space-around;
   }
   footer .topSection .contactSection {
     max-width: 300px;

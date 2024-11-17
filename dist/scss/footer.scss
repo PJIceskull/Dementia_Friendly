@@ -16,7 +16,7 @@ footer {
     align-items: flex-start;
     justify-content: space-between;
     padding: 75px 25px;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     gap: 30px 25px;
     .logoGroup {
       background-color: #ffffff;
@@ -136,10 +136,17 @@ footer {
     }
   }
 }
+@media screen and (max-width: 1500px) {
+  footer {
+    .topSection {
+      flex-wrap: wrap;
+    }
+  }
+}
 @media screen and (max-width: 1024px) {
   footer {
     .topSection {
-      justify-content: space-between;
+      justify-content: space-around;
       .contactSection {
         max-width: 300px;
       }
