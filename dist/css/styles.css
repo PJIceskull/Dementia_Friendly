@@ -69,6 +69,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  padding-top: 20vh;
 }
 
 img {
@@ -80,7 +81,7 @@ img {
 .contentWrapper {
   max-width: 1280px;
   margin: 0 auto;
-  padding-top: 55px;
+  padding: 55px 30px 0;
 }
 
 nav {
@@ -1051,7 +1052,7 @@ button {
 }
 
 .resourceHeader {
-  margin-bottom: 44px;
+  margin-bottom: 20px;
 }
 .resourceHeader h1 {
   color: #60007f;
@@ -1089,12 +1090,19 @@ button {
   height: 36px;
   filter: brightness(0) saturate(100%);
   overflow: hidden;
-  transition: 0.4s;
+  transition: 0.2s;
 }
 
 .resourceLinks {
   max-width: 1180px;
   font-size: 16px;
+}
+.resourceLinks h2 {
+  color: #ff5b1a;
+  font-size: 36px;
+  font-family: Inter_Bold;
+  font-style: italic;
+  margin-top: 50px;
 }
 .resourceLinks a,
 .resourceLinks p {
@@ -1112,7 +1120,11 @@ button {
 }
 .resourceLinks ul {
   list-style: none;
-  line-height: 50px;
+  line-height: 40px;
+}
+.resourceLinks .listBullet {
+  list-style: disc;
+  margin-left: 50px;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -55,7 +55,7 @@
   }
 }
 .resourceHeader {
-  margin-bottom: 44px;
+  margin-bottom: 20px;
   h1 {
     color: map-get($map: $webColors, $key: "purple");
     margin-bottom: 0;
@@ -95,13 +95,20 @@
       height: 36px;
       filter: brightness(0) saturate(100%);
       overflow: hidden;
-      transition: 0.4s;
+      transition: 0.2s;
     }
   }
 }
 .resourceLinks {
   max-width: 1180px;
   font-size: 16px;
+  h2 {
+    color: map-get($map: $webColors, $key: "orange");
+    font-size: 36px;
+    font-family: Inter_Bold;
+    font-style: italic;
+    margin-top: 50px;
+  }
   a,
   p {
     font-family: Inter_Bold;
@@ -118,6 +125,10 @@
   }
   ul {
     list-style: none;
-    line-height: 50px;
+    line-height: 40px;
+  }
+  .listBullet {
+    list-style: disc;
+    margin-left: 50px;
   }
 }
