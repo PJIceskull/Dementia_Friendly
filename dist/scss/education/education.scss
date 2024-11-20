@@ -141,7 +141,7 @@
       overflow: hidden;
       border: 7px solid map-get($map: $webColors, $key: "purple");
       img {
-        object-position: center;
+        // object-position: center;
         object-position: 0 64%;
       }
     }

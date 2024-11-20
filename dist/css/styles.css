@@ -1313,7 +1313,6 @@ button {
   border: 7px solid #60007f;
 }
 .dfFriendSect .missionSect .missionPhoto img {
-  object-position: center;
   object-position: 0 64%;
 }
 .dfFriendSect article {
