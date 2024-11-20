@@ -21,6 +21,19 @@ p {
   margin-bottom: 16px;
 }
 
+h1,
+h2,
+h3 {
+  font-family: Inter_Bold;
+}
+
+p,
+ul {
+  font-size: 24px;
+  strong {
+    font-family: Inter_Bold;
+  }
+}
 a {
   transition-duration: 0.25s;
 }
