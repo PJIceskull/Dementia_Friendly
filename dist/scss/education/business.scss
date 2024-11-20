@@ -31,3 +31,70 @@
     margin-bottom: 38px;
   }
 }
+.learnSect {
+  max-width: 1035px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  h1 {
+    font-size: 54px;
+    font-family: Inter_ExtraBold;
+    font-style: italic;
+    color: map-get($map: $webColors, $key: "purple");
+    margin-bottom: 87px;
+  }
+}
+.learnVisuals {
+  //   background-color: lawngreen;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 75px 77px;
+  flex-wrap: wrap;
+  .learnBox {
+    border-radius: 50px;
+    width: 290px;
+    height: 234px;
+    color: #ffffff;
+    padding: 37px 19px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    .learnIcon {
+      height: 58px;
+      width: 58px;
+    }
+    p {
+      font-size: 20px;
+      font-family: Inter_Bold;
+      font-style: italic;
+      line-height: 40px;
+      text-align: center;
+      margin-bottom: 0;
+    }
+  }
+}
+.orangeBox {
+  background-color: #efa968;
+  box-shadow: 10px 10px #c18349;
+}
+.greenBox {
+  background-color: #a8d571;
+  box-shadow: 10px 10px #81ab4f;
+}
+.blueBox {
+  background-color: #7f85da;
+  box-shadow: 10px 10px #5b61b8;
+}
+.redBox {
+  background-color: #d56f6f;
+  box-shadow: 10px 10px #ad4b4b;
+}
+.purpleBox {
+  background-color: #b772cd;
+  box-shadow: 10px 10px #944faa;
+}
