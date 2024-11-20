@@ -52,6 +52,21 @@ p {
   margin-bottom: 16px;
 }
 
+h1,
+h2,
+h3 {
+  font-family: Inter_Bold;
+}
+
+p,
+ul {
+  font-size: 24px;
+}
+p strong,
+ul strong {
+  font-family: Inter_Bold;
+}
+
 a {
   transition-duration: 0.25s;
 }
@@ -354,6 +369,7 @@ button {
   border-style: none;
   padding: 5px 10px;
   cursor: pointer;
+  transition-duration: 0.25s;
 }
 
 .purpleBTN {
@@ -405,6 +421,34 @@ button {
 }
 .topButton:hover .arrowUp {
   filter: brightness(0) saturate(100%) invert(45%) sepia(86%) saturate(2800%) hue-rotate(348deg) brightness(100%) contrast(103%);
+}
+
+.businessBTNs {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 36px;
+}
+.businessBTNs button {
+  padding: 12px 60px;
+  min-height: 64px;
+  text-transform: none;
+  font-family: Inter_SemiBold;
+}
+
+.brownBTN {
+  background-color: rgba(255, 91, 26, 0.69);
+  color: #ffffff;
+}
+.brownBTN:hover {
+  background-color: #ff5b1a;
+}
+
+.grayBTN {
+  background-color: rgba(255, 255, 255, 0.69);
+}
+.grayBTN:hover {
+  background-color: #ffffff;
 }
 
 .homeHeader {
@@ -507,7 +551,6 @@ button {
 .homeSection article p,
 .actionTeamSect article p,
 .fallSection article p {
-  font-size: 24px;
   line-height: 40px;
   text-wrap: pretty;
 }
@@ -1120,7 +1163,7 @@ button {
 }
 .resourceLinks ul {
   list-style: none;
-  line-height: 40px;
+  line-height: 55px;
 }
 .resourceLinks .listBullet {
   list-style: disc;
@@ -1209,8 +1252,8 @@ button {
   text-align: center;
   transition-duration: 0.4s;
 }
-.educationBlock .blockText strong {
-  font-family: Inter_Bold;
+.educationBlock .blockText p {
+  font-size: 20px;
 }
 .educationBlock .downArrow {
   height: 24px;
@@ -1229,10 +1272,111 @@ button {
   transform: scale(2);
 }
 
+.dfFriendSect {
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 145px;
+}
+.dfFriendSect h1,
+.dfFriendSect h2 {
+  margin-bottom: 30px;
+}
+.dfFriendSect h1 {
+  color: #ff5b1a;
+  font-style: italic;
+  font-size: 48px;
+}
+.dfFriendSect h2 {
+  color: #60007f;
+  font-size: 32px;
+}
+.dfFriendSect ul {
+  max-width: 1267px;
+  line-height: 40px;
+  padding-left: 35px;
+  margin-bottom: 39px;
+}
+.dfFriendSect ul li {
+  margin-bottom: 16px;
+}
+.dfFriendSect .missionSect {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+.dfFriendSect .missionSect .missionPhoto {
+  width: 520px;
+  height: 435px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 7px solid #60007f;
+}
+.dfFriendSect .missionSect .missionPhoto img {
+  object-position: center;
+  object-position: 0 64%;
+}
+.dfFriendSect article {
+  max-width: 578px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  gap: 30px;
+}
+.dfFriendSect article .dfIcon {
+  width: 119px;
+  height: 115px;
+}
+.dfFriendSect article .dfIcon img {
+  filter: blur(0.6px);
+}
+.dfFriendSect article h2,
+.dfFriendSect article p {
+  margin-bottom: 0;
+}
+.dfFriendSect article p {
+  line-height: 40px;
+  text-wrap: pretty;
+  text-align: center;
+}
+
 @media screen and (max-width: 1057px) {
   .blockWrap {
     flex-direction: column;
   }
+}
+.businessTrainSect {
+  background-image: url(../images/background/pexels-pixabay-48148.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  margin-bottom: 72px;
+}
+.businessTrainSect .backgroundOverlay {
+  background-color: rgba(0, 0, 0, 0.71);
+  height: 100%;
+  width: 100%;
+  padding: 79px 19.5vw 71px 16vw;
+}
+.businessTrainSect a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.businessTrainSect a:hover {
+  color: #ff5b1a;
+}
+.businessTrainSect h1 {
+  color: #ff5b1a;
+  font-style: italic;
+  font-size: 48px;
+  text-shadow: 2px 3px rgba(0, 0, 0, 0.25);
+}
+.businessTrainSect p {
+  line-height: 40px;
+  margin-bottom: 38px;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -76,8 +76,8 @@
     padding: 23px;
     text-align: center;
     transition-duration: 0.4s;
-    strong {
-      font-family: Inter_Bold;
+    p {
+      font-size: 20px;
     }
   }
   .downArrow {
@@ -100,6 +100,74 @@
     }
     .downArrow {
       transform: scale(2);
+    }
+  }
+}
+.dfFriendSect {
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 145px;
+  h1,
+  h2 {
+    margin-bottom: 30px;
+  }
+  h1 {
+    color: map-get($map: $webColors, $key: "orange");
+    font-style: italic;
+    font-size: 48px;
+  }
+  h2 {
+    color: map-get($map: $webColors, $key: "purple");
+    font-size: 32px;
+  }
+  ul {
+    max-width: 1267px;
+    line-height: 40px;
+    padding-left: 35px;
+    margin-bottom: 39px;
+    li {
+      margin-bottom: 16px;
+    }
+  }
+  .missionSect {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    .missionPhoto {
+      width: 520px;
+      height: 435px;
+      border-radius: 20px;
+      overflow: hidden;
+      border: 7px solid map-get($map: $webColors, $key: "purple");
+      img {
+        object-position: center;
+        object-position: 0 64%;
+      }
+    }
+  }
+  article {
+    max-width: 578px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 30px;
+    .dfIcon {
+      width: 119px;
+      height: 115px;
+      img {
+        filter: blur(0.6px);
+      }
+    }
+    h2,
+    p {
+      margin-bottom: 0;
+    }
+    p {
+      line-height: 40px;
+      text-wrap: pretty;
+      text-align: center;
     }
   }
 }
