@@ -13,3 +13,5 @@ node_modules
 # /scss 
 dist/styles/css/style.css.map
 dist/styles/css/styles.css.map
+
+dist/index.php
