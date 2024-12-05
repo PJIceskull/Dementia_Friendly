@@ -54,6 +54,7 @@
   justify-content: space-evenly;
   gap: 75px 77px;
   flex-wrap: wrap;
+  margin-bottom: 99px;
   .learnBox {
     border-radius: 50px;
     width: 290px;
@@ -96,5 +97,18 @@
   .purpleBox {
     background-color: #b772cd;
     box-shadow: 10px 10px #944faa;
+  }
+}
+.busPicRow {
+  margin-top: 15px;
+  margin-bottom: -50px;
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 1fr 1fr;
+  gap: 17px;
+  .businessPhoto {
+    height: 100%;
+    img {
+      object-position: left;
+    }
   }
 }

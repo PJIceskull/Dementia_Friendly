@@ -11,5 +11,5 @@ node_modules
 
 # project 
 # /scss 
-/css/style.css.map
-/css/styles.css.map
+dist/styles/css/style.css.map
+dist/styles/css/styles.css.map

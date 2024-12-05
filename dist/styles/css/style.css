@@ -1,30 +1,40 @@
+/*
+Theme Name:   Dementia Friendly Indianapolis Theme
+Theme URI:    https://wordpress.org/themes/twentytwentyone/
+Description:  Dementia Friendly Indianapolis Theme
+Author:       WordPress.org
+Author URI:   https://wordpress.org/
+Template:     twentytwentyone
+Version:      1.0.0
+Text Domain:  twentytwentyonechild
+*/
 @font-face {
   font-family: Inter_Light;
-  src: url(../css/fonts/Inter_18pt-Light.ttf);
+  src: url(../assets/fonts/Inter/Inter_18pt-Light.ttf);
 }
 @font-face {
   font-family: Inter_Regular;
-  src: url(../css/fonts/Inter_18pt-Regular.ttf);
+  src: url(../assets/fonts/Inter/Inter_18pt-Regular.ttf);
 }
 @font-face {
   font-family: Inter_Medium;
-  src: url(../css/fonts/Inter_18pt-Medium.ttf);
+  src: url(../assets/fonts/Inter/Inter_18pt-Medium.ttf);
 }
 @font-face {
   font-family: Inter_SemiBold;
-  src: url(../css/fonts/Inter_18pt-Bold.ttf);
+  src: url(../assets/fonts/Inter/Inter_18pt-Bold.ttf);
 }
 @font-face {
   font-family: Inter_Bold;
-  src: url(../css/fonts/Inter_18pt-Bold.ttf);
+  src: url(../assets/fonts/Inter/Inter_18pt-Bold.ttf);
 }
 @font-face {
   font-family: Inter_ExtraBold;
-  src: url(../css/fonts/Inter_18pt-ExtraBold.ttf);
+  src: url(../assets/fonts/Inter/Inter_18pt-ExtraBold.ttf);
 }
 @font-face {
   font-family: Inter_Black;
-  src: url(../css/fonts/Inter_18pt-Black.ttf);
+  src: url(../assets/fonts/Inter/Inter_18pt-Black.ttf);
 }
 * {
   margin: 0;
@@ -1402,6 +1412,7 @@ button {
   justify-content: space-evenly;
   gap: 75px 77px;
   flex-wrap: wrap;
+  margin-bottom: 99px;
 }
 .learnVisuals .learnBox {
   border-radius: 50px;
@@ -1447,4 +1458,102 @@ button {
   box-shadow: 10px 10px #944faa;
 }
 
-/*# sourceMappingURL=styles.css.map */
+.busPicRow {
+  margin-top: 15px;
+  margin-bottom: -50px;
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 1fr 1fr;
+  gap: 17px;
+}
+.busPicRow .businessPhoto {
+  height: 100%;
+}
+.busPicRow .businessPhoto img {
+  object-position: left;
+}
+
+.quoteSilder {
+  background-color: #2b0038;
+  min-height: 400px;
+  position: relative;
+}
+.quoteSilder .quoteBox {
+  height: 400px;
+  width: 896px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.quoteSilder .quoteBox hr {
+  border: 1px solid #ffffff;
+  height: 319px;
+}
+
+.gradientWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 400px;
+  position: absolute;
+  width: 100%;
+}
+.gradientWrap .purpleGradient {
+  background: linear-gradient(to left, rgba(43, 0, 56, 0), #3a004d);
+  width: 25%;
+  height: 100%;
+}
+.gradientWrap .purpleGradient:nth-child(even) {
+  background: linear-gradient(to right, rgba(43, 0, 56, 0), #3a004d);
+}
+
+.quoteItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 0 60px;
+  height: 100%;
+}
+.quoteItem .quoteText {
+  background-color: lavender;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.quoteItem .quote,
+.quoteItem .qAuthor {
+  font-style: italic;
+  margin-bottom: 0;
+}
+.quoteItem .quote {
+  color: #ffffff;
+  line-height: 40px;
+  align-self: flex-start;
+}
+.quoteItem .qAuthor {
+  color: #ff5b1a;
+  font-family: Inter_SemiBold;
+  align-self: flex-end;
+}
+
+.dotButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 23px;
+}
+.dotButtons .dots {
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+}
+.dotButtons .selected {
+  background-color: #ff5b1a;
+}
+.dotButtons .notSelected {
+  border: 2px solid #ff5b1a;
+}
+
+/*# sourceMappingURL=style.css.map */

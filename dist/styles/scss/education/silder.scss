@@ -1,0 +1,84 @@
+.quoteSilder {
+  background-color: #2b0038;
+  min-height: 400px;
+  position: relative;
+  .quoteBox {
+    // border: 1px solid white;
+    height: 400px;
+    width: 896px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    hr {
+      border: 1px solid #ffffff;
+      height: 319px;
+    }
+  }
+}
+.gradientWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 400px;
+  position: absolute;
+  width: 100%;
+  .purpleGradient {
+    background: linear-gradient(to left, rgba(#2b0038, 0), #3a004d);
+    // width: 552px;
+    // width: 34.5vw;
+    width: 25%;
+    height: 100%;
+    &:nth-child(even) {
+      background: linear-gradient(to right, rgba(#2b0038, 0), #3a004d);
+    }
+  }
+}
+.quoteItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 0 60px;
+  height: 100%;
+  .quoteText {
+    // height: 100%;
+    background-color: lavender;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  .quote,
+  .qAuthor {
+    font-style: italic;
+    margin-bottom: 0;
+  }
+  .quote {
+    color: #ffffff;
+    line-height: 40px;
+    align-self: flex-start;
+  }
+  .qAuthor {
+    color: map-get($map: $webColors, $key: "orange");
+    font-family: Inter_SemiBold;
+    align-self: flex-end;
+  }
+}
+.dotButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 23px;
+  .dots {
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+  }
+  .selected {
+    background-color: map-get($map: $webColors, $key: "orange");
+  }
+  .notSelected {
+    border: 2px solid map-get($map: $webColors, $key: "orange");
+  }
+}

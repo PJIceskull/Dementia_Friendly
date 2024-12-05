@@ -1,4 +1,5 @@
 @import "variables.scss";
+@import "themeInfo.scss"; // Theme name for Stylesheet
 @import "_fonts.scss";
 @import "structure.scss";
 @import "nav.scss";
@@ -10,3 +11,4 @@
 @import "resources/resources.scss";
 @import "education/education.scss";
 @import "education/business.scss";
+@import "education/silder.scss";
