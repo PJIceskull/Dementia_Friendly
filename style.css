@@ -1,40 +1,40 @@
 /*
 Theme Name:   Dementia Friendly Indianapolis Theme
-Theme URI:    https://wordpress.org/themes/twentytwentyone/
+Theme URI:    https://wordpress.org/themes/twentytwentyfive/
 Description:  Dementia Friendly Indianapolis Theme
 Author:       WordPress.org
 Author URI:   https://wordpress.org/
-Template:     twentytwentyone
+Template:     twentytwentyfive
 Version:      1.0.0
-Text Domain:  twentytwentyonechild
+Text Domain:  twentytwentyfivechild
 */
 @font-face {
   font-family: Inter_Light;
-  src: url(../assets/fonts/Inter/Inter_18pt-Light.ttf);
+  src: url(assets/fonts/Inter/Inter_18pt-Light.ttf);
 }
 @font-face {
   font-family: Inter_Regular;
-  src: url(../assets/fonts/Inter/Inter_18pt-Regular.ttf);
+  src: url(assets/fonts/Inter/Inter_18pt-Regular.ttf);
 }
 @font-face {
   font-family: Inter_Medium;
-  src: url(../assets/fonts/Inter/Inter_18pt-Medium.ttf);
+  src: url(assets/fonts/Inter/Inter_18pt-Medium.ttf);
 }
 @font-face {
   font-family: Inter_SemiBold;
-  src: url(../assets/fonts/Inter/Inter_18pt-Bold.ttf);
+  src: url(assets/fonts/Inter/Inter_18pt-Bold.ttf);
 }
 @font-face {
   font-family: Inter_Bold;
-  src: url(../assets/fonts/Inter/Inter_18pt-Bold.ttf);
+  src: url(assets/fonts/Inter/Inter_18pt-Bold.ttf);
 }
 @font-face {
   font-family: Inter_ExtraBold;
-  src: url(../assets/fonts/Inter/Inter_18pt-ExtraBold.ttf);
+  src: url(assets/fonts/Inter/Inter_18pt-ExtraBold.ttf);
 }
 @font-face {
   font-family: Inter_Black;
-  src: url(../assets/fonts/Inter/Inter_18pt-Black.ttf);
+  src: url(assets/fonts/Inter/Inter_18pt-Black.ttf);
 }
 * {
   margin: 0;
