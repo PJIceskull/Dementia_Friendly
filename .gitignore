@@ -11,7 +11,7 @@ node_modules
 
 # project 
 # /scss 
-dist/styles/css/style.css.map
-dist/styles/css/styles.css.map
+style.css.map
+styles.css.map
 
 dist/index.php

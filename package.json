@@ -8,7 +8,7 @@
   },
   "scripts": {
     "serve": "live-server dist",
-    "compile:sass": "sass dist/styles/scss/styles.scss dist/styles/css/style.css -w",
+    "compile:sass": "sass styles/scss/styles.scss style.css -w",
     "build-webpack": "webpack"
   },
   "keywords": [],
