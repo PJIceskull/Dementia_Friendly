@@ -6,19 +6,21 @@ This is the code repository for the Dementia Friendly Indianapolis website. Belo
 
 - [Links](#links-to-preview-site)
 - [About Project](#about-project)
+- [Connecting to FlyWheel](#flywheel)
+  - [Sftp Access and Uploads](#sftp--ftp-access-and-uploads)
+  - [Connecting to Local](#local)
+  - [DeployHQ](#deployhq)
 - [Project Structure](#project-structure)
   - [Pages](#pages)
   - [Styles](#styles)
     - [Sass/SCSS](#sass)
     - [Installing SASS](#installing-sass)
-  - [lib](#lib)
-  - [Backend](#src--backend)
-    - [Installing Webpack](#installing-webpack)
 - [Authors](#authors)
 
 ## Links to Preview Site
 
-- [Web4 link]()
+<!-- - [Web4 link]() -->
+
 - [Github Pages](https://pjiceskull.github.io/Dementia_Friendly/dist)
 
 Design Protoype
@@ -51,6 +53,61 @@ to inform people of how to interact and support someone living with dementia. DF
 involves various projects and education materials. We hope having an additional website for DFIndy will help reduce the confusion
 between the two.
 
+## Flywheel
+
+### SFTP / FTP Access and Uploads
+
+[Tutorial on SFTP Access and Uploads for Flywheel](https://getflywheel.com/wordpress-support/sftp-access-and-uploads/)
+
+**Configuration Settings**
+
+| Mode      | SFTP (not regular FTP)   |
+| --------- | ------------------------ |
+| Host      | sftp.flywheelsites.com   |
+| Port:     | 22                       |
+| Username: | Your Flywheels Username. |
+| Password: | Your flywheels password. |
+
+Here are the basic steps you’ll need to do to access your Flywheels server.
+
+1. Use FTP client of choice.
+
+   I tend to use WinSCP as my FTP client, so I’ll be using it in my example. However, this process should work with other FTP clients such as **Cyberduck** and **Filezilla**.
+
+2. Create a new Session or Connection. It should look something like this:
+
+   Make sure the file protocol at the top is set to **SFTP**.
+
+3. Under the Hostname or Server Name, put **sftp.flywheelsites.com**
+
+4. Under the **Username** field, put the **username** you used for Flywheel.
+
+5. Likewise in the password field, enter the password you used for your flywheel account. For certain clients (like WinSCP), there’s a good chance, they’ll ask you to login first and then enter your password for authentication.
+
+6. If you were successful in logging in, then you should see a folder that contains the files for your WordPress website.
+
+### Local
+
+[Follow this help document on connecting to Local](https://localwp.com/help-docs/local-features/local-connect/)
+
+1. Download and Install Local
+
+2. Connecting to Flywheels
+
+   - In Local navigate to the “Connect” tab in the side-bar on the left
+
+   - Click the “Log in to Your Host” or “My Host” buttons.
+
+   - Select the “Connect to a platform” option, which will take you to the “Connected accounts” section of Local’s Preferences.
+
+   - In the flywheels option, Select the sign-in link next to Flywheel.
+
+   - It will then open a browser window and you’ll be prompted to either sign in to your flywheel account or create a new one.
+
+### DeployHQ
+
+[Article about using DeployHQ](http://DeployHQ)
+
 ## Project Structure
 
 This section of the readme will be going over the folder structure of our project.
@@ -63,8 +120,8 @@ For building the website, we used the following languages below:
 Other Software/Tools/Languages we used:
 
 - **Sass**
-- **Webpack**
-- **jQuery**
+  <!-- - **Webpack** -->
+  <!-- - **jQuery** -->
 
 ### Pages
 
@@ -116,7 +173,7 @@ Make the file paths of your `styles.scss` file and `styles.css` file are correct
 
 At the bottom of the page, open your **NPM SCRIPTS** section.
 
-![NPM Scripts Location](dist/images/readme/npm_1.PNG "NPM Scripts Location")
+![NPM Scripts Location](assets/images/readme/npm_1.PNG "NPM Scripts Location")
 
 If you don't see a **NPM Scripts** section:
 
@@ -124,15 +181,15 @@ If you don't see a **NPM Scripts** section:
 - Click to 3 dots,
 - Make sure NPM Scripts is checked
 
-![Check NPM Scripts in Options](dist/images/readme/npm_options.png "Explorer Options")
+![Check NPM Scripts in Options](assets/images/readme/npm_options.png "Explorer Options")
 
 In your **NPM Scripts**, you should see the scripts you made in your `package.json` file and of those script you should see one saying, `compile:sass`.
 
-![Play "Compile:Sass" Script](dist/images/readme/npm_play.png "Play NPM Compile:Sass Script")
+![Play "Compile:Sass" Script](assets/images/readme/npm_play.png "Play NPM Compile:Sass Script")
 
 Click the play button next to your `compile:sass` script to run it. It will open up a terminal to watch all of your changes and edits.
 
-### Lib
+<!-- ### Lib
 
 This folder is where we will holding the file for [jQuery](https://jquery.com/). This file is the compressed, production version of jQuery.
 
@@ -167,6 +224,10 @@ The `src` folder is where we will working with my javascript files. Similar to o
 4. Run NPM Script
    In the NPM SCRIPTS section of your explorer window, click the play button next `build-webpack` to compile your javascript code.
 
-_Add any programming languages, libraries, or frameworks you used in the project under the **readme file**._
+_Add any programming languages, libraries, or frameworks you used in the project under the **readme file**._ -->
 
 ## Authors
+
+- [Pierce Issah](https://www.linkedin.com/in/pierceissah/)
+- [Lucas Wolf](https://www.linkedin.com/in/lucas--wolf/)
+- [Nate Osborne](https://www.linkedin.com/in/natedosborne/)
