@@ -1,4 +1,13 @@
-<!-- Footer -->
+<?php
+/**
+ * Title: Footer with colophon, 4 columns
+ * Slug: dfIndy/footer
+ * Categories: footer
+ * Block Types: core/template-part/footer
+ * Description: A footer section with a colophon and 4 columns.
+ */
+?>
+<!-- wp:group -->
 <footer>
     <section class="topSection">
       <div class="logoGroup">
@@ -82,8 +91,4 @@
       <p></p>
     </section>
 </footer>
-
-  <script src="lib/jquery-3.7.1.min.js"></script>
-  <script type="module" src="app/app.js"></script>
-</body>
-</html>
+<!-- /wp:group -->
