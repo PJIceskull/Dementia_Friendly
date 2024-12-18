@@ -59,7 +59,7 @@ between the two.
 
 [Tutorial on SFTP Access and Uploads for Flywheel](https://getflywheel.com/wordpress-support/sftp-access-and-uploads/)
 
-**Configuration Settings**
+#### Configuration Settings
 
 | Mode      | SFTP (not regular FTP)   |
 | --------- | ------------------------ |
@@ -72,19 +72,33 @@ Here are the basic steps you’ll need to do to access your Flywheels server.
 
 1. Use FTP client of choice.
 
-   I tend to use WinSCP as my FTP client, so I’ll be using it in my example. However, this process should work with other FTP clients such as **Cyberduck** and **Filezilla**.
+   I tend to use WinSCP as my FTP client, so I’ll use it as an example. However, this process should work with other FTP clients, such as Cyberduck and Filezilla.
 
 2. Create a new Session or Connection. It should look something like this:
 
+   ![SFTP Setup step 1](assets/images/readme/SFTP_1.png "Login to new SFTP Session in WinSCP.")
+
+   ![SFTP Setup step 1 in Cyberduck](assets/images/readme/SFTP_2.png "What opening a new connection looks like in cyberduck.")
+
    Make sure the file protocol at the top is set to **SFTP**.
+
+   ![SFTP Setup step 2](assets/images/readme/SFTP_3.png "Set the file protocol to SFTP")
+
+   ![SFTP Setup step 2](assets/images/readme/SFTP_4.png "Setting the file protocol to SFTP in CyberDuck")
 
 3. Under the Hostname or Server Name, put **sftp.flywheelsites.com**
 
+   ![SFTP Setup Step 3](assets/images/readme/SFTP_5.png "Enter the hostname")
+
 4. Under the **Username** field, put the **username** you used for Flywheel.
+
+   ![SFTP Setup Step 4](assets/images/readme/SFTP_6.png "Enter your Flywheel Username")
 
 5. Likewise in the password field, enter the password you used for your flywheel account. For certain clients (like WinSCP), there’s a good chance, they’ll ask you to login first and then enter your password for authentication.
 
-6. If you were successful in logging in, then you should see a folder that contains the files for your WordPress website.
+   ![SFTP Setup Step 5](assets/images/readme/SFTP_7.png "Enter you Flywheels Password")
+
+6. If you successfully log in, you should see a folder containing the files for your WordPress website.
 
 ### Local
 
@@ -96,9 +110,13 @@ Here are the basic steps you’ll need to do to access your Flywheels server.
 
    - In Local navigate to the “Connect” tab in the side-bar on the left
 
+   ![Local Navigation Side Bar](assets/images/readme/Local_1.png "Select Connect icon on side bar")
+
    - Click the “Log in to Your Host” or “My Host” buttons.
 
    - Select the “Connect to a platform” option, which will take you to the “Connected accounts” section of Local’s Preferences.
+
+   ![Connect to a platform](assets/images/readme/Local_2.png "Connect accounts screen")
 
    - In the flywheels option, Select the sign-in link next to Flywheel.
 
@@ -149,31 +167,31 @@ After you are done working in your SASS file, compile all of your changes into t
 
 1. To install SASS run this cmd in your terminal:
 
-```cmd
-npm install sass
-```
+   ```cmd
+   npm install sass
+   ```
 
-or
+   or
 
-```cmd
-npm install sass --save-dev
-```
+   ```cmd
+   npm install sass --save-dev
+   ```
 
-`--save-dev` is used to save the package for development purposes. It's typically only installed if someone clones your source repository first and then runs `npm install` in it.
+   `--save-dev` is used to save the package for development purposes. It's typically only installed if someone clones your source repository first and then runs `npm install` in it.
 
 2. In your `package.JSON` file, inside your `"scripts"` sections insert this line:
 
-```json
-"compile:sass": "sass dist/scss/styles.scss dist/css/styles.css -w"
-```
+   ```json
+   "compile:sass": "sass dist/scss/styles.scss dist/css/styles.css -w"
+   ```
 
-Make the file paths of your `styles.scss` file and `styles.css` file are correct or you will get an error. The `styles.css` file path in particular will be we will be compiling all our styles.
+   Make the file paths of your `styles.scss` file and `styles.css` file are correct or you will get an error. The `styles.css` file path in particular will be we will be compiling all our styles.
 
 3. Run your NPM Scripts
 
-At the bottom of the page, open your **NPM SCRIPTS** section.
+   At the bottom of the page, open your **NPM SCRIPTS** section.
 
-![NPM Scripts Location](assets/images/readme/npm_1.PNG "NPM Scripts Location")
+   ![NPM Scripts Location](assets/images/readme/npm_1.PNG "NPM Scripts Location")
 
 If you don't see a **NPM Scripts** section:
 
