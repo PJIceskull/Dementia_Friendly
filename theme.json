@@ -64,12 +64,68 @@
       "defaultFontSizes": false,
       "fluid": true,
       "fontSizes": [],
-      "fontFamilies": []
+      "fontFamilies": [
+        {
+          "name": "Inter",
+          "slug": "Inter",
+          "fontFamily": "'Inter', sans-serif",
+          "fontFace": [
+            {
+              "fontFamily": "Inter",
+              "fontWeight": "300 900",
+              "fontStyle": "normal",
+              "src": [
+                "file:./assets/fonts/Inter/Inter-VariableFont_opsz,wght.ttf"
+              ]
+            },
+            {
+              "fontFamily": "Inter",
+              "fontWeight": "500",
+              "fontStyle": "normal",
+              "src": ["file:./assets/fonts/Inter/Inter_18pt-Medium.ttf"]
+            },
+            {
+              "fontFamily": "Inter",
+              "fontWeight": "600",
+              "fontStyle": "normal",
+              "src": ["file:./assets/fonts/Inter/Inter_18pt-SemiBold.ttf"]
+            },
+            {
+              "fontFamily": "Inter",
+              "fontWeight": "700",
+              "fontStyle": "normal",
+              "src": ["file:./assets/fonts/Inter/Inter_18pt-Bold.ttf"]
+            },
+            {
+              "fontFamily": "Inter",
+              "fontWeight": "800",
+              "fontStyle": "normal",
+              "src": ["file:./assets/fonts/Inter/Inter_18pt-ExtraBold.ttf"]
+            },
+            {
+              "fontFamily": "Inter",
+              "fontWeight": "900",
+              "fontStyle": "normal",
+              "src": ["file:./assets/fonts/Inter/Inter_18pt-Black.ttf"]
+            }
+          ]
+        }
+      ],
+      "textTransform": true,
+      "fontStyle": true,
+      "lineHeight": true,
+      "letterSpacing": true,
+      "textDecoration": true
     }
   },
   "styles": {},
   "customTemplates": {},
   "templateParts": [
+    {
+      "area": "header",
+      "name": "header",
+      "title": "Header"
+    },
     {
       "area": "footer",
       "name": "footer",
