@@ -15,12 +15,12 @@ export function changeRoute() {
   scroll(0, 0);
 
   if (pageID != "") {
-    $.get(`pages/${pageID}.html`, function (data) {
+    $.get(`dist/pages/${pageID}.html`, function (data) {
       // console.log("data " + data);
       $("#app").html(data);
     });
   } else {
-    $.get(`pages/home.html`, function (data) {
+    $.get(`dist/pages/home.html`, function (data) {
       // console.log("data " + data);
       $("#app").html(data);
     });

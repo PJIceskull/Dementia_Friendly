@@ -7,9 +7,8 @@
     "lib": "lib"
   },
   "scripts": {
-    "serve": "live-server dist",
-    "compile:sass": "sass styles/scss/styles.scss dist/css/styles.css -w",
-    "wp-compile:sass": "sass styles/scss/styles.scss style.css -w",
+    "serve": "live-server",
+    "compile:sass": "sass styles/scss/styles.scss style.css -w",
     "build-webpack": "webpack"
   },
   "keywords": [],
