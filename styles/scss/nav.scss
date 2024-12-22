@@ -100,6 +100,11 @@ nav {
   // Jutify content to the top and Add padding at the top so items can be align correctly.
   // padding-top: 30px;
   padding-top: 52px;
+  &:hover {
+    .dropDownArrow {
+      filter: $lightDimGrayFilter;
+    }
+  }
   a {
     width: 100%;
     color: #ffffff;
@@ -116,6 +121,7 @@ nav {
     filter: $dimGrayFilter;
     transform: rotate(180deg);
     margin-bottom: -13px;
+    z-index: -1;
     img {
       // height: 100%;
       width: 100%;

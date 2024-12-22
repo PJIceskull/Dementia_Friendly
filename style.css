@@ -40,7 +40,6 @@ Text Domain:  twentytwentyfivechild
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
   font-family: Inter_Regular;
 }
 
@@ -198,6 +197,9 @@ nav .donateBTN:active {
   min-height: 300px; /* Keep an eye on the height of the Drop Down Menu/Object. If the object's height is too small or too far from the parent/hovered element, then the dropdown Menu will disappear. */
   padding-top: 52px;
 }
+.dropDownMenu:hover .dropDownArrow {
+  filter: brightness(0) saturate(100%) invert(46%) sepia(19%) saturate(0%) hue-rotate(248deg) brightness(95%) contrast(89%);
+}
 .dropDownMenu a {
   width: 100%;
   color: #ffffff;
@@ -214,6 +216,7 @@ nav .donateBTN:active {
   filter: brightness(0) saturate(100%) invert(30%) sepia(0%) saturate(2593%) hue-rotate(316deg) brightness(95%) contrast(70%);
   transform: rotate(180deg);
   margin-bottom: -13px;
+  z-index: -1;
 }
 .dropDownMenu .dropDownArrow img {
   width: 100%;
@@ -462,10 +465,21 @@ button {
   background-color: #ffffff;
 }
 
+.whiteBTN {
+  background-color: #ffffff;
+  color: #60007f;
+  border: 2px solid #60007f;
+  transition-duration: 0.2s;
+}
+.whiteBTN:hover {
+  color: #a7589b;
+  border: 2px solid #a7589b;
+}
+
 .homeHeader {
-  height: 423px;
+  height: 438px;
   max-width: 1280vw;
-  background-image: url(../images/background/homeHero.png);
+  background-image: url(assets/images/background/homeHero.png);
   background-size: cover;
   background-position: top;
   display: flex;
@@ -481,23 +495,32 @@ button {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  gap: 25px;
+  gap: 20px;
 }
 .homeHeroText h1 {
   color: #ffffff;
   font-family: Inter_Bold;
-  font-size: clamp(64px, 45.7143px + 1.7857vw, 80px);
-  max-width: 715px;
+  font-size: 64px;
+  max-width: 570px;
   text-wrap: balance;
   margin-bottom: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+.homeHeroText p {
+  margin-bottom: 0;
+  color: #ffffff;
+  max-width: 734px;
+  font-size: 21px;
 }
 .homeHeroText .purpleBTN {
-  width: 245px;
-  height: 72px;
+  width: 231px;
+  height: 65px;
+  font-size: 18px;
+  font-family: Inter_SemiBold;
 }
 
 .homeIMG {
-  width: 46.25%;
+  width: 888px;
   height: 100%;
 }
 .homeIMG img {
@@ -516,14 +539,87 @@ button {
   font-style: italic;
   font-size: 64px;
   text-align: center;
-  margin-top: 75px;
-  margin-bottom: 21px;
+  margin: 75px;
 }
 .homeContent .topButton {
   position: fixed;
   z-index: 10;
   right: 58px;
   bottom: 4vh;
+}
+
+.eventsSection {
+  background-color: #2b0038;
+  min-height: 506px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 324px;
+}
+.eventsSection h2 {
+  color: #ffffff;
+  font-family: Inter_SemiBold;
+  font-size: 48px;
+  font-style: italic;
+  margin-bottom: 41px;
+  align-self: flex-start;
+}
+.eventsSection .groupRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 26px;
+  width: 100%;
+}
+.eventsSection .eventCard {
+  width: 406px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.eventsSection .eventCard .eventIMG {
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.eventsSection .eventCard .eventTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.eventsSection .eventCard .eventTitle h3 {
+  font-size: 36px;
+  font-family: Inter_Medium;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+.eventsSection .eventCard .eventTitle .eventLink {
+  background-color: #60007f;
+  height: 40px;
+  width: 141px;
+  border-radius: 100px;
+  transition-duration: 0.3s;
+}
+.eventsSection .eventCard .eventTitle .eventLink a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: Inter_Bold;
+  font-style: italic;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+}
+.eventsSection .eventCard .eventTitle .eventLink:hover {
+  background-color: #4e0047;
+}
+.eventsSection .eventCard .eventDate {
+  color: #ff5b1a;
+}
+.eventsSection .eventCard .eventDate p {
+  margin-bottom: 0;
 }
 
 .homeSection,
@@ -610,6 +706,15 @@ button {
 .homeSection .missionText {
   max-width: 580px;
 }
+.homeSection .missionText strong {
+  font-family: Inter_Bold;
+}
+.homeSection .missionText strong a {
+  font-family: Inter_Bold;
+}
+.homeSection .missionText a {
+  font-family: Inter_Regular;
+}
 .homeSection .purpleRing {
   border: 9px solid rgba(96, 0, 127, 0.24);
   border-radius: 50%;
@@ -678,8 +783,8 @@ button {
   padding: 0 50px;
 }
 .actionTeamSect .sectionPhoto {
-  width: 636px;
-  height: 336px;
+  width: 458px;
+  height: 384px;
   overflow: hidden;
   border-radius: 20px;
 }
@@ -690,7 +795,7 @@ button {
   object-position: center;
 }
 .actionTeamSect article {
-  max-width: 580px;
+  max-width: 742px;
   min-height: 430px;
   display: flex;
   align-items: flex-start;
@@ -701,11 +806,20 @@ button {
   font-size: 24px;
   line-height: 40px;
   text-wrap: pretty;
+  margin-bottom: 35px;
 }
-.actionTeamSect article .purpleBTN {
+.actionTeamSect article .btnGroup {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 29px;
+}
+.actionTeamSect article .purpleBTN,
+.actionTeamSect article .whiteBTN {
   font-size: 20px;
+  padding: 5px 19px;
   height: 57px;
-  padding: 5px 57px;
+  width: 223px;
 }
 
 .actionTeamLogos {
@@ -899,6 +1013,19 @@ button {
   }
   .actionTeamLogos {
     padding: 15px 60px 25px;
+  }
+}
+@media screen and (max-width: 1410px) {
+  .eventsSection {
+    padding: 45px 25px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .eventsSection h2 {
+    align-self: center;
+  }
+  .eventsSection .groupRow {
+    flex-direction: column;
   }
 }
 .homeGallery {
@@ -1182,7 +1309,7 @@ button {
 }
 
 .educateHeader {
-  background-image: url(../images/background/education_hero.png);
+  background-image: url(assets/images/background/education_hero.png);
   background-size: cover;
   background-position: center;
   height: 185px;
@@ -1246,13 +1373,13 @@ button {
   background-size: cover;
 }
 .educationBlock .friendsBG {
-  background-image: url(../images/background/Dementia_Friends.png);
+  background-image: url(assets/images/background/Dementia_Friends.png);
 }
 .educationBlock .friendsBG h1 {
   font-size: 40px;
 }
 .educationBlock .trainingBG {
-  background-image: url(../images/background/Business_Training.png);
+  background-image: url(assets/images/background/Business_Training.png);
 }
 .educationBlock .trainingBG h1 {
   font-size: 24px;

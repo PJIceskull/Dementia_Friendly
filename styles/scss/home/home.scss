@@ -1,8 +1,8 @@
 // Styles for the Home Page
 .homeHeader {
-  height: 423px;
+  height: 438px;
   max-width: $site-width;
-  background-image: url(../images/background/homeHero.png);
+  background-image: url(assets/images/background/homeHero.png);
   background-size: cover;
   background-position: top;
   display: flex;
@@ -19,23 +19,33 @@
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  gap: 25px;
+  gap: 20px;
   h1 {
     color: #ffffff;
     font-family: Inter_Bold;
-    // font-size: 80px;
-    font-size: clamp(64px, 45.7143px + 1.7857vw, 80px);
-    max-width: 715px;
+    font-size: 64px;
+    // font-size: clamp(64px, 45.7143px + 1.7857vw, 80px);
+    max-width: 570px;
     text-wrap: balance;
     margin-bottom: 0;
+    text-shadow: 2px 2px 4px rgba($color: #000000, $alpha: 0.25);
+  }
+  p {
+    margin-bottom: 0;
+    color: #ffffff;
+    max-width: 734px;
+    font-size: 21px;
   }
   .purpleBTN {
-    width: 245px;
-    height: 72px;
+    width: 231px;
+    height: 65px;
+    font-size: 18px;
+    font-family: Inter_SemiBold;
   }
 }
 .homeIMG {
-  width: 46.25%;
+  // width: 50%;
+  width: 888px;
   height: 100%;
   img {
     height: 100%;
@@ -52,14 +62,87 @@
     font-style: italic;
     font-size: 64px;
     text-align: center;
-    margin-top: 75px;
-    margin-bottom: 21px;
+    margin: 75px;
   }
   .topButton {
     position: fixed;
     z-index: 10;
     right: 58px;
     bottom: 4vh;
+  }
+}
+.eventsSection {
+  background-color: #2b0038;
+  min-height: 506px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 324px;
+  h2 {
+    color: #ffffff;
+    font-family: Inter_SemiBold;
+    font-size: 48px;
+    font-style: italic;
+    margin-bottom: 41px;
+    align-self: flex-start;
+  }
+  .groupRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 26px;
+    width: 100%;
+  }
+  .eventCard {
+    // max-width: 406px;
+    width: 406px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    .eventIMG {
+      height: 200px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .eventTitle {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      h3 {
+        font-size: 36px;
+        font-family: Inter_Medium;
+        color: #ffffff;
+        margin-bottom: 0;
+      }
+      .eventLink {
+        background-color: map-get($map: $webColors, $key: "purple");
+        height: 40px;
+        width: 141px;
+        border-radius: 100px;
+        transition-duration: 0.3s;
+        a {
+          color: #ffffff;
+          text-decoration: none;
+          font-family: Inter_Bold;
+          font-style: italic;
+          font-size: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          height: 100%;
+        }
+        &:hover {
+          background-color: map-get($map: $webColors, $key: "darkPurple");
+        }
+      }
+    }
+    .eventDate {
+      color: map-get($map: $webColors, $key: "orange");
+      p {
+        margin-bottom: 0;
+      }
+    }
   }
 }
 .homeSection,
@@ -125,6 +208,15 @@
   overflow: hidden;
   .missionText {
     max-width: 580px;
+    strong {
+      font-family: Inter_Bold;
+      a {
+        font-family: Inter_Bold;
+      }
+    }
+    a {
+      font-family: Inter_Regular;
+    }
   }
   .purpleRing {
     border: 9px solid
@@ -197,8 +289,8 @@
 .actionTeamSect {
   padding: 0 50px;
   .sectionPhoto {
-    width: 636px;
-    height: 336px;
+    width: 458px;
+    height: 384px;
     overflow: hidden;
     border-radius: 20px;
     img {
@@ -209,7 +301,7 @@
     }
   }
   article {
-    max-width: 580px;
+    max-width: 742px;
     min-height: 430px;
     display: flex;
     align-items: flex-start;
@@ -219,11 +311,20 @@
       font-size: 24px;
       line-height: 40px;
       text-wrap: pretty;
+      margin-bottom: 35px;
     }
-    .purpleBTN {
+    .btnGroup {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      gap: 29px;
+    }
+    .purpleBTN,
+    .whiteBTN {
       font-size: 20px;
+      padding: 5px 19px;
       height: 57px;
-      padding: 5px 57px;
+      width: 223px;
     }
   }
 }
@@ -423,5 +524,21 @@
   }
   .actionTeamLogos {
     padding: 15px 60px 25px;
+  }
+}
+@media screen and (max-width: 1410px) {
+  .eventsSection {
+    // padding: 45px 0;
+    padding: 45px 25px;
+  }
+}
+@media screen and (max-width: $iPad-width) {
+  .eventsSection {
+    h2 {
+      align-self: center;
+    }
+    .groupRow {
+      flex-direction: column;
+    }
   }
 }
