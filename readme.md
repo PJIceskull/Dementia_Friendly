@@ -19,9 +19,9 @@ This is the code repository for the Dementia Friendly Indianapolis website. Belo
 
 ## Links to Preview Site
 
-<!-- - [Web4 link]() -->
+- **[Wordpress Site](https://dfindy.flywheelsites.com/)**
 
-- [Github Pages](https://pjiceskull.github.io/Dementia_Friendly/dist)
+- [Github Pages](https://pjiceskull.github.io/Dementia_Friendly)
 
 Design Protoype
 
@@ -182,7 +182,7 @@ After you are done working in your SASS file, compile all of your changes into t
 2. In your `package.JSON` file, inside your `"scripts"` sections insert this line:
 
    ```json
-   "compile:sass": "sass dist/scss/styles.scss dist/css/styles.css -w"
+   "compile:sass": "sass styles/scss/styles.scss style.css -w"
    ```
 
    Make the file paths of your `styles.scss` file and `styles.css` file are correct or you will get an error. The `styles.css` file path in particular will be we will be compiling all our styles.
